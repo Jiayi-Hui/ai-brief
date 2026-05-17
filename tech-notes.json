@@ -1,0 +1,26 @@
+{
+  "notes": [
+    {
+      "date": "2026-05-17",
+      "title": "给老板搭一个付费媒体头条Pipeline",
+      "context": "目标：Bloomberg / Reuters / FT 三家付费媒体，绕过paywall，抓正文全文，推送到Cloudflare，老板在香港用手机刷。",
+      "sections": [
+        {
+          "title": "Cursor卖给我的 vs 现实",
+          "body": "Cursor说：Playwright stealth + 慢爬就能过Bloomberg。\n现实：Bypass Paywall只管「请订阅」，不管「Press and Hold / 我不是机器人」。这是两套完全不同的防御系统。BPC ≠ anti-bot。慢爬是必要条件，不是充分条件。Bloomberg的anti-bot看的是Azure数据中心IP + 自动化指纹，不是速度。"
+        },
+        {
+          "title": "踩的坑",
+          "body": "1. workers.dev在香港/大陆部分运营商直接被DNS污染，页面打不开。修了：切到Cloudflare Pages (*.pages.dev)做主入口，Tunnel做备用。\n2. WSL和Windows的node_modules二进制不互通——workerd是平台原生C++，Windows装的在WSL跑直接炸。修了：删掉重装。\n3. FT的BPC没完全绕开时，会把订阅广告页当正文抓进来。修了：clean_article_text()过滤关键词 + 字数阈值丢弃。\n4. 定时任务开了空白Chrome profile，没走我登录了账号的Chrome。还没修：下次要CDP挂到已有Chrome（端口9222）。"
+        },
+        {
+          "title": "现在能用的",
+          "body": "Reuters最稳，FT大部分OK，Bloomberg只能标题+链接（anti-bot太凶）。\nPages入口：https://financial-news-hk.pages.dev\nTunnel备用：每次AVD重启会变，记在data/tunnel_url.txt\n定时：Windows Task Scheduler每30分钟跑一轮（AVD必须开着）。"
+        }
+      ],
+      "next": "下次继续：把fetch_full.py默认挂到我已登录的Chrome（不是空白profile）。Bloomberg要么接受部分失败，要么上半自动（检测到captcha暂停，通知我手动点一下）。",
+      "status": "in-progress",
+      "stack": "Playwright + Cloudflare Workers/Pages/KV + Windows Task Scheduler"
+    }
+  ]
+}

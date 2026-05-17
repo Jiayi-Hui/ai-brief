@@ -255,7 +255,143 @@ h1 {
   white-space: pre-wrap;
 }
 
-/* Empty state */
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 28px;
+  padding: 3px;
+  background: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.tab {
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.tab:hover {
+  color: var(--text);
+  background: rgba(0,0,0,0.03);
+}
+
+.tab.active {
+  color: var(--text);
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* Tech note card */
+.tech-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.25s, border-color 0.25s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.tech-card:hover {
+  border-color: var(--border-light);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.tech-header {
+  margin-bottom: 20px;
+}
+
+.tech-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-1);
+  margin-bottom: 12px;
+  padding: 3px 10px;
+  background: var(--accent-1-soft);
+  border-radius: 5px;
+  letter-spacing: 0.02em;
+}
+
+.tech-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.tech-context {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tech-section {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.tech-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.tech-section-title {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.tech-section-body {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.tech-meta {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.tech-tag {
+  padding: 2px 8px;
+  background: var(--surface);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.tech-tag.in-progress {
+  color: #a67c00;
+  background: rgba(166,124,0,0.08);
+}
+
+.tech-tag.done {
+  color: #4a7c59;
+  background: rgba(74,124,89,0.08);
+}
 .empty {
   text-align: center;
   padding: 80px 20px;
@@ -307,12 +443,17 @@ footer {
   <header>
     <div class="badge">Daily Slice</div>
     <h1>Anna每日AI手记</h1>
-    <p class="subtitle">每日一主题 · AI 前沿 · 地缘信号 · 工作上下文 · 08:30</p>
+    <p class="subtitle">每日一主题 · AI 前沿 · 地缘信号 · 工作上下文 · 技术攻坚笔记 · 08:30</p>
   </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="brief">Daily Brief</button>
+    <button class="tab" data-tab="tech">Tech Learning</button>
+  </div>
 
   <nav class="date-nav" id="dateNav"></nav>
 
-  <main id="briefsContainer">
+  <main id="contentContainer">
     <div class="loading">加载中...</div>
   </main>
 

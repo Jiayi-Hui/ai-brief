@@ -1,20 +1,27 @@
-const API_URL = './briefs.json';
+const container = document.getElementById('contentContainer');
+const loading = document.querySelector('.loading');
+let currentTab = 'brief';
 
-const container = document.getElementById('briefs-container');
-const loading = document.getElementById('loading');
+// Tab switching
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentTab = btn.dataset.tab;
+    loadContent();
+  });
+});
 
-async function loadBriefs() {
+async function loadContent() {
+  loading.style.display = 'block';
+  container.innerHTML = '';
+  
   try {
-    const response = await fetch(API_URL + '?t=' + Date.now());
-    if (!response.ok) throw new Error('Failed to load');
-    const data = await response.json();
-    
-    if (!data.briefs || data.briefs.length === 0) {
-      container.innerHTML = '<div class="no-briefs">暂无简报</div>';
-      return;
+    if (currentTab === 'brief') {
+      await loadBriefs();
+    } else {
+      await loadTechNotes();
     }
-
-    renderBriefs(data.briefs);
   } catch (err) {
     container.innerHTML = '<div class="error">加载失败，请刷新重试</div>';
     console.error(err);
@@ -23,16 +30,23 @@ async function loadBriefs() {
   }
 }
 
+async function loadBriefs() {
+  const response = await fetch('./briefs.json?t=' + Date.now());
+  if (!response.ok) throw new Error('Failed to load briefs');
+  const data = await response.json();
+  
+  if (!data.briefs || data.briefs.length === 0) {
+    container.innerHTML = '<div class="empty"><div class="empty-icon">~</div>暂无简报</div>';
+    return;
+  }
+
+  renderBriefs(data.briefs);
+}
+
 function renderBriefs(briefs) {
   container.innerHTML = briefs.map(brief => {
-    // v3 theme-based structure
-    if (brief.theme) {
-      return renderThemeBrief(brief);
-    }
-    // v2 legacy fallback
-    if (brief.entries) {
-      return renderLegacyBrief(brief);
-    }
+    if (brief.theme) return renderThemeBrief(brief);
+    if (brief.entries) return renderLegacyBrief(brief);
     return '';
   }).join('');
 }
@@ -52,21 +66,11 @@ function renderThemeBrief(brief) {
         <h2 class="brief-theme">${escapeHtml(brief.theme)}</h2>
       </header>
       
-      ${brief.opening ? `
-        <div class="opening">
-          ${formatBody(brief.opening)}
-        </div>
-      ` : ''}
+      ${brief.opening ? `<div class="opening">${formatBody(brief.opening)}</div>` : ''}
       
-      <div class="sections">
-        ${sections}
-      </div>
+      <div class="sections">${sections}</div>
       
-      ${brief.closing ? `
-        <div class="closing">
-          ${formatBody(brief.closing)}
-        </div>
-      ` : ''}
+      ${brief.closing ? `<div class="closing">${formatBody(brief.closing)}</div>` : ''}
     </article>
   `;
 }
@@ -85,11 +89,59 @@ function renderLegacyBrief(brief) {
         <div class="brief-date">${escapeHtml(brief.date)}</div>
         <h2 class="brief-theme">Anna每日认知切片</h2>
       </header>
-      <div class="entries">
-        ${entries}
-      </div>
+      <div class="entries">${entries}</div>
     </article>
   `;
+}
+
+async function loadTechNotes() {
+  const response = await fetch('./tech-notes.json?t=' + Date.now());
+  if (!response.ok) throw new Error('Failed to load tech notes');
+  const data = await response.json();
+  
+  if (!data.notes || data.notes.length === 0) {
+    container.innerHTML = '<div class="empty"><div class="empty-icon">~</div>暂无技术笔记</div>';
+    return;
+  }
+
+  renderTechNotes(data.notes);
+}
+
+function renderTechNotes(notes) {
+  container.innerHTML = notes.map(note => {
+    const sections = (note.sections || []).map(s => `
+      <div class="tech-section">
+        <div class="tech-section-title">${escapeHtml(s.title)}</div>
+        <div class="tech-section-body">${formatBody(s.body)}</div>
+      </div>
+    `).join('');
+
+    const metaTags = [];
+    if (note.status) metaTags.push(`<span class="tech-tag ${note.status}">${note.status === 'in-progress' ? '进行中' : '已完成'}</span>`);
+    if (note.stack) metaTags.push(`<span class="tech-tag">${escapeHtml(note.stack)}</span>`);
+
+    return `
+      <article class="tech-card">
+        <header class="tech-header">
+          <div class="tech-date">${escapeHtml(note.date)}</div>
+          <h2 class="tech-title">${escapeHtml(note.title)}</h2>
+        </header>
+        
+        ${note.context ? `<div class="tech-context">${escapeHtml(note.context)}</div>` : ''}
+        
+        <div class="tech-sections">${sections}</div>
+        
+        ${note.next ? `
+          <div class="tech-section" style="border-top:1px dashed var(--border);margin-top:8px;">
+            <div class="tech-section-title">Next</div>
+            <div class="tech-section-body">${escapeHtml(note.next)}</div>
+          </div>
+        ` : ''}
+        
+        ${metaTags.length ? `<div class="tech-meta">${metaTags.join('')}</div>` : ''}
+      </article>
+    `;
+  }).join('');
 }
 
 function formatBody(text) {
@@ -107,7 +159,7 @@ function escapeHtml(text) {
 }
 
 // Load on page load
-loadBriefs();
+loadContent();
 
 // Auto-refresh every 5 minutes
-setInterval(loadBriefs, 5 * 60 * 1000);
+setInterval(loadContent, 5 * 60 * 1000);
