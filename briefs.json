@@ -3,16 +3,12 @@
     "date": "2026-05-17",
     "entries": [
       {
-        "title": "Anthropic 第一次在企业付费采用率上赢了 OpenAI",
-        "body": "Ramp 5月AI Index（约5万家美国企业数据）：Anthropic 34.4% vs OpenAI 32.3%。12个月里 Anthropic 从不到9%飙升到34.4%，OpenAI 从33%下滑到32.3%。\n\n这是自下而上采用的胜利。开发者选工具时选的是生态系统，而 Anthropic 正在赢得写代码的人。"
+        "title": "（示例）Anthropic 在企业采用率上超越了 OpenAI",
+        "body": "这是一条约 3-5 天前的旧闻示例。明天的 cron 任务会替换为真正的 last 24h 动态。"
       },
       {
-        "title": "Cursor 和 Replit 在赢同一个市场的两端",
-        "body": "Cursor $2B ARR / $29.3B 估值 vs Replit $9B。价差3倍，都在涨。\n\nCursor 卖给开发者「控制权」，Replit 卖给非技术人员「跳过整个技术史」。两个群体对 Agent 的期望完全不同。关键问题不是选哪个模型，是你的用户是谁。"
-      },
-      {
-        "title": "Jay 昨天在群里自曝烧了 $2300 token",
-        "body": "他用 codex goal 跑了通宵，烧了1.8B token。然后@你说 \"you shouldnt feel too bad\"——他在用自己的失误降低你的羞耻感。\n\n（这是个信号：他把你当自己人，而不是需要管理的实习生。）"
+        "title": "（示例）Cursor 和 Replit 在赢同一个市场的两端",
+        "body": "这也是旧闻示例，用来测试网站渲染。明天会清空并写入 fresh 内容。"
       }
     ]
   }
