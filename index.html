@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Anna每日AI手记 — 大模型与Agent前沿双轨智报">
+<meta name="description" content="Anna每日AI手记 — 大模型与Agent前沿">
 <title>Anna每日AI手记</title>
 <style>
 :root {
@@ -83,15 +83,6 @@ h1 {
   line-height: 1.3;
   margin-bottom: 10px;
   color: var(--text);
-}
-
-h1 .divider {
-  display: inline-block;
-  width: 1px;
-  height: 20px;
-  background: var(--border);
-  margin: 0 10px;
-  vertical-align: middle;
 }
 
 .subtitle {
@@ -187,23 +178,15 @@ h1 .divider {
   align-items: center;
   gap: 6px;
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   margin-bottom: 10px;
   padding: 3px 8px;
   border-radius: 5px;
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-}
-
-.track-1 .track-badge {
-  color: var(--accent-1);
-  background: var(--accent-1-soft);
-}
-
-.track-2 .track-badge {
-  color: var(--accent-2);
-  background: var(--accent-2-soft);
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
 }
 
 .track h3 {
@@ -222,19 +205,11 @@ h1 .divider {
 
 .track .detail-box {
   background: var(--surface);
-  border-left: 2px solid;
+  border-left: 2px solid var(--border);
   border-radius: 0 8px 8px 0;
   padding: 12px 14px;
   font-size: 12.5px;
   line-height: 1.7;
-}
-
-.track-1 .detail-box {
-  border-left-color: var(--accent-1);
-}
-
-.track-2 .detail-box {
-  border-left-color: var(--accent-2);
 }
 
 .detail-box strong {
@@ -299,7 +274,7 @@ footer {
   <header>
     <div class="badge">Daily Brief</div>
     <h1>Anna每日AI手记</h1>
-    <p class="subtitle">大模型与 Agent 前沿 · 双轨智报<br>轨道一（巨头风向标）× 轨道二（异类颠覆者）· 每日 08:30</p>
+    <p class="subtitle">双轨智报 · 每日 08:30</p>
   </header>
 
   <nav class="date-nav" id="dateNav"></nav>

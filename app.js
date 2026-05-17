@@ -15,7 +15,7 @@
     } catch (e) {
       container.innerHTML = `
         <div class="empty">
-          <div class="empty-icon">⚠️</div>
+          <div class="empty-icon">(!)</div>
           <p>数据加载失败，请稍后刷新</p>
         </div>
       `;
@@ -52,7 +52,7 @@
     if (filtered.length === 0) {
       container.innerHTML = `
         <div class="empty">
-          <div class="empty-icon">📭</div>
+          <div class="empty-icon">(...)</div>
           <p>暂无简报数据</p>
         </div>
       `;
@@ -64,28 +64,17 @@
         <div class="brief-date">${brief.date}</div>
         ${brief.items.map(item => `
           <section class="track track-${item.track}">
-            <div class="track-badge">
-              ${item.track === 1 ? '🏛️ 轨道一：巨头风向标' : '🚀 轨道二：异类颠覆者'}
-            </div>
+            <div class="track-badge">${item.track === 1 ? '巨头风向标' : '异类颠覆者'}</div>
             <h3>${escapeHtml(item.company)}</h3>
             <p class="title">${escapeHtml(item.title)}</p>
             ${item.detail ? `
-              <div class="detail-box">
-                <strong>${item.track === 1 ? '行业底层影响' : '硬核数据与洞察'}：</strong>
-                <p>${escapeHtml(item.detail)}</p>
-              </div>
+              <div class="detail-box">${escapeHtml(item.detail)}</div>
             ` : ''}
             ${item.impact ? `
-              <div class="detail-box">
-                <strong>行业底层影响：</strong>
-                <p>${escapeHtml(item.impact)}</p>
-              </div>
+              <div class="detail-box">${escapeHtml(item.impact)}</div>
             ` : ''}
             ${item.insight ? `
-              <div class="detail-box">
-                <strong>硬核洞察：</strong>
-                <p>${escapeHtml(item.insight)}</p>
-              </div>
+              <div class="detail-box">${escapeHtml(item.insight)}</div>
             ` : ''}
           </section>
         `).join('')}
