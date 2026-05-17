@@ -140,6 +140,10 @@ h1 {
   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 
+.brief-header {
+  margin-bottom: 20px;
+}
+
 .brief-date {
   display: inline-flex;
   align-items: center;
@@ -148,14 +152,80 @@ h1 {
   font-size: 12px;
   font-weight: 500;
   color: var(--accent-1);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   padding: 3px 10px;
   background: var(--accent-1-soft);
   border-radius: 5px;
   letter-spacing: 0.02em;
 }
 
-/* Entry sections */
+.brief-theme {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* Theme-based sections */
+.opening {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.7;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 15px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.section-body {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.closing {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--accent-1);
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* Legacy entries (fallback) */
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .entry {
   padding: 18px 0;
   border-top: 1px solid var(--border);
@@ -170,7 +240,7 @@ h1 {
   padding-bottom: 0;
 }
 
-.entry h3 {
+.entry-title {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -222,6 +292,7 @@ footer {
   .container { padding: 28px 16px; }
   h1 { font-size: 20px; }
   .brief-card { padding: 20px; border-radius: 12px; }
+  .brief-theme { font-size: 16px; }
 }
 
 /* Scrollbar */
@@ -236,7 +307,7 @@ footer {
   <header>
     <div class="badge">Daily Slice</div>
     <h1>Anna每日AI手记</h1>
-    <p class="subtitle">AI 前沿 · 地缘信号 · 工作上下文 · 每日 08:30</p>
+    <p class="subtitle">每日一主题 · AI 前沿 · 地缘信号 · 工作上下文 · 08:30</p>
   </header>
 
   <nav class="date-nav" id="dateNav"></nav>

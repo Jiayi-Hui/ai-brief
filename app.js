@@ -1,87 +1,113 @@
-(async function() {
-  const container = document.getElementById('briefsContainer');
-  const dateNav = document.getElementById('dateNav');
+const API_URL = './briefs.json';
 
-  let allBriefs = [];
-  let activeDate = 'all';
+const container = document.getElementById('briefs-container');
+const loading = document.getElementById('loading');
 
-  async function load() {
-    try {
-      const res = await fetch('briefs.json?t=' + Date.now());
-      if (!res.ok) throw new Error('Failed to load');
-      allBriefs = await res.json();
-      render();
-    } catch (e) {
-      container.innerHTML = `
-        <div class="empty">
-          <div class="empty-icon">(!)</div>
-          <p>数据加载失败，请稍后刷新</p>
-        </div>
-      `;
-      console.error(e);
-    }
-  }
-
-  function renderNav() {
-    const dates = allBriefs.map(b => b.date);
-    const chips = dates.slice(0, 14);
-
-    dateNav.innerHTML = `
-      <button class="date-chip ${activeDate === 'all' ? 'active' : ''}" data-date="all">全部</button>
-      ${chips.map(d => `
-        <button class="date-chip ${activeDate === d ? 'active' : ''}" data-date="${d}">${d.slice(5)}</button>
-      `).join('')}
-    `;
-
-    dateNav.querySelectorAll('.date-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        activeDate = btn.dataset.date;
-        render();
-      });
-    });
-  }
-
-  function renderBriefs() {
-    const filtered = activeDate === 'all'
-      ? allBriefs
-      : allBriefs.filter(b => b.date === activeDate);
-
-    if (filtered.length === 0) {
-      container.innerHTML = `
-        <div class="empty">
-          <div class="empty-icon">(...)</div>
-          <p>暂无简报数据</p>
-        </div>
-      `;
+async function loadBriefs() {
+  try {
+    const response = await fetch(API_URL + '?t=' + Date.now());
+    if (!response.ok) throw new Error('Failed to load');
+    const data = await response.json();
+    
+    if (!data.briefs || data.briefs.length === 0) {
+      container.innerHTML = '<div class="no-briefs">暂无简报</div>';
       return;
     }
 
-    container.innerHTML = filtered.map(brief => `
-      <article class="brief-card" data-date="${brief.date}">
-        <div class="brief-date">${brief.date}</div>
-        ${brief.entries.map(entry => `
-          <section class="entry">
-            <h3>${escapeHtml(entry.title)}</h3>
-            <div class="entry-body">${escapeHtml(entry.body).replace(/\n/g, '<br>')}</div>
-          </section>
-        `).join('')}
-      </article>
-    `).join('');
+    renderBriefs(data.briefs);
+  } catch (err) {
+    container.innerHTML = '<div class="error">加载失败，请刷新重试</div>';
+    console.error(err);
+  } finally {
+    loading.style.display = 'none';
   }
+}
 
-  function render() {
-    renderNav();
-    renderBriefs();
-  }
+function renderBriefs(briefs) {
+  container.innerHTML = briefs.map(brief => {
+    // v3 theme-based structure
+    if (brief.theme) {
+      return renderThemeBrief(brief);
+    }
+    // v2 legacy fallback
+    if (brief.entries) {
+      return renderLegacyBrief(brief);
+    }
+    return '';
+  }).join('');
+}
 
-  function escapeHtml(str) {
-    if (!str) return '';
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-  }
+function renderThemeBrief(brief) {
+  const sections = (brief.sections || []).map(section => `
+    <div class="section">
+      <div class="section-subtitle">${escapeHtml(section.subtitle)}</div>
+      <div class="section-body">${formatBody(section.body)}</div>
+    </div>
+  `).join('');
 
-  setInterval(load, 5 * 60 * 1000);
+  return `
+    <article class="brief-card">
+      <header class="brief-header">
+        <div class="brief-date">${escapeHtml(brief.date)}</div>
+        <h2 class="brief-theme">${escapeHtml(brief.theme)}</h2>
+      </header>
+      
+      ${brief.opening ? `
+        <div class="opening">
+          ${formatBody(brief.opening)}
+        </div>
+      ` : ''}
+      
+      <div class="sections">
+        ${sections}
+      </div>
+      
+      ${brief.closing ? `
+        <div class="closing">
+          ${formatBody(brief.closing)}
+        </div>
+      ` : ''}
+    </article>
+  `;
+}
 
-  await load();
-})();
+function renderLegacyBrief(brief) {
+  const entries = brief.entries.map(entry => `
+    <div class="entry">
+      <div class="entry-title">${escapeHtml(entry.title)}</div>
+      <div class="entry-body">${formatBody(entry.body)}</div>
+    </div>
+  `).join('');
+
+  return `
+    <article class="brief-card">
+      <header class="brief-header">
+        <div class="brief-date">${escapeHtml(brief.date)}</div>
+        <h2 class="brief-theme">Anna每日认知切片</h2>
+      </header>
+      <div class="entries">
+        ${entries}
+      </div>
+    </article>
+  `;
+}
+
+function formatBody(text) {
+  if (!text) return '';
+  return escapeHtml(text)
+    .replace(/\n/g, '<br>')
+    .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// Load on page load
+loadBriefs();
+
+// Auto-refresh every 5 minutes
+setInterval(loadBriefs, 5 * 60 * 1000);
