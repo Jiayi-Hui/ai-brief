@@ -5,7 +5,6 @@
   let allBriefs = [];
   let activeDate = 'all';
 
-  // Load data
   async function load() {
     try {
       const res = await fetch('briefs.json?t=' + Date.now());
@@ -23,10 +22,9 @@
     }
   }
 
-  // Render date navigation
   function renderNav() {
     const dates = allBriefs.map(b => b.date);
-    const chips = dates.slice(0, 14); // Show last 14 days
+    const chips = dates.slice(0, 14);
 
     dateNav.innerHTML = `
       <button class="date-chip ${activeDate === 'all' ? 'active' : ''}" data-date="all">全部</button>
@@ -43,7 +41,6 @@
     });
   }
 
-  // Render brief cards
   function renderBriefs() {
     const filtered = activeDate === 'all'
       ? allBriefs
@@ -62,20 +59,10 @@
     container.innerHTML = filtered.map(brief => `
       <article class="brief-card" data-date="${brief.date}">
         <div class="brief-date">${brief.date}</div>
-        ${brief.items.map(item => `
-          <section class="track track-${item.track}">
-            <div class="track-badge">${item.track === 1 ? '巨头风向标' : '异类颠覆者'}</div>
-            <h3>${escapeHtml(item.company)}</h3>
-            <p class="title">${escapeHtml(item.title)}</p>
-            ${item.detail ? `
-              <div class="detail-box">${escapeHtml(item.detail)}</div>
-            ` : ''}
-            ${item.impact ? `
-              <div class="detail-box">${escapeHtml(item.impact)}</div>
-            ` : ''}
-            ${item.insight ? `
-              <div class="detail-box">${escapeHtml(item.insight)}</div>
-            ` : ''}
+        ${brief.entries.map(entry => `
+          <section class="entry">
+            <h3>${escapeHtml(entry.title)}</h3>
+            <div class="entry-body">${escapeHtml(entry.body).replace(/\n/g, '<br>')}</div>
           </section>
         `).join('')}
       </article>
@@ -94,7 +81,6 @@
     return div.innerHTML;
   }
 
-  // Auto-refresh every 5 minutes (for live updates)
   setInterval(load, 5 * 60 * 1000);
 
   await load();

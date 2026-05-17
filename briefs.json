@@ -1,20 +1,18 @@
 [
   {
     "date": "2026-05-17",
-    "items": [
+    "entries": [
       {
-        "track": 1,
-        "company": "Anthropic",
-        "title": "第一次在企业付费采用率上赢了OpenAI",
-        "detail": "Ramp 5月AI Index报告（覆盖约5万家美国企业数据）显示，Anthropic以34.4%的付费商业客户比例首次超过OpenAI的32.3%。12个月内Anthropic从不到9%飙升至34.4%，增长26个百分点；同期OpenAI从33%下滑至32.3%。",
-        "impact": "开发者驱动的自下而上采用（Claude Code -> 团队座位扩张 -> 采购预算）正在击败消费级产品的自上而下企业扩张。对OpenClaw体系而言，这意味着Agent基础设施的采购决策越来越由实际写代码的人推动，而非CIO的顶层设计。当开发者选择工具时，他们选择的是一个生态系统——而Anthropic正在赢得这个生态系统。"
+        "title": "Anthropic 第一次在企业付费采用率上赢了 OpenAI",
+        "body": "Ramp 5月AI Index（约5万家美国企业数据）：Anthropic 34.4% vs OpenAI 32.3%。12个月里 Anthropic 从不到9%飙升到34.4%，OpenAI 从33%下滑到32.3%。\n\n这是自下而上采用的胜利。开发者选工具时选的是生态系统，而 Anthropic 正在赢得写代码的人。"
       },
       {
-        "track": 2,
-        "company": "Cursor vs Replit",
-        "title": "同一赛道，两种完全不同的胜利逻辑",
-        "detail": "Cursor（VS Code分叉，纯编码IDE）ARR突破20亿美元，估值293亿美元；Replit（浏览器原生全栈平台）估值90亿美元，Agent 3支持200分钟自主运行。两者价差超过3倍，却都在增长。",
-        "insight": "AI编码工具的市场正在分裂为专业开发者效率工具和非技术人员全栈生成器两个完全不重叠的赛道。Cursor证明：当AI足够好时，开发者愿意为保持控制权付费（Cursor Pro $20/月 vs Replit Core $25/月+计算信用）。Replit证明：当AI足够自主时，非工程师可以跳过去学习Git、配环境、买服务器的整个历史门槛。两者都在赢，但赢的是同一个市场的两端。对于Agent基础设施的建设者来说，关键问题不是选哪个模型，而是你的用户是谁——因为这两个群体对Agent的期望、付费意愿和使用模式完全不同。"
+        "title": "Cursor 和 Replit 在赢同一个市场的两端",
+        "body": "Cursor $2B ARR / $29.3B 估值 vs Replit $9B。价差3倍，都在涨。\n\nCursor 卖给开发者「控制权」，Replit 卖给非技术人员「跳过整个技术史」。两个群体对 Agent 的期望完全不同。关键问题不是选哪个模型，是你的用户是谁。"
+      },
+      {
+        "title": "Jay 昨天在群里自曝烧了 $2300 token",
+        "body": "他用 codex goal 跑了通宵，烧了1.8B token。然后@你说 \"you shouldnt feel too bad\"——他在用自己的失误降低你的羞耻感。\n\n（这是个信号：他把你当自己人，而不是需要管理的实习生。）"
       }
     ]
   }
