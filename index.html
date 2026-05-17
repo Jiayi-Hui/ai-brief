@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="大模型与 Agent 前沿双轨智报 — 每日精选">
+<title>大模型与 Agent 前沿 · 双轨智报</title>
+<style>
+:root {
+  --bg: #050507;
+  --surface: #0f0f18;
+  --card: #13131f;
+  --card-hover: #181828;
+  --border: #222230;
+  --border-light: #2a2a3c;
+  --text: #e8e8f0;
+  --text-secondary: #7a7a8a;
+  --text-muted: #555566;
+  --accent-1: #f59e0b;
+  --accent-1-soft: rgba(245,158,11,0.12);
+  --accent-2: #06b6d4;
+  --accent-2-soft: rgba(6,182,212,0.12);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "SF Mono", Monaco, Inconsolata, "Roboto Mono", "Fira Code", monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e80;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 480px;
+}
+
+/* Date nav */
+.date-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  padding: 4px;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.date-chip {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.date-chip:hover {
+  color: var(--text);
+  background: var(--card-hover);
+}
+
+.date-chip.active {
+  color: var(--text);
+  background: var(--card);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Brief card */
+.brief-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.brief-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-1px);
+}
+
+.brief-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-1);
+  margin-bottom: 20px;
+  padding: 4px 12px;
+  background: var(--accent-1-soft);
+  border-radius: 6px;
+}
+
+.brief-date::before {
+  content: '📅';
+  font-size: 12px;
+}
+
+/* Track sections */
+.track {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.track:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.track:last-child {
+  padding-bottom: 0;
+}
+
+.track-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+}
+
+.track-1 .track-badge {
+  color: var(--accent-1);
+  background: var(--accent-1-soft);
+}
+
+.track-2 .track-badge {
+  color: var(--accent-2);
+  background: var(--accent-2-soft);
+}
+
+.track h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.track .title {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.track .detail-box {
+  background: var(--surface);
+  border-left: 3px solid;
+  border-radius: 0 8px 8px 0;
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.track-1 .detail-box {
+  border-left-color: var(--accent-1);
+}
+
+.track-2 .detail-box {
+  border-left-color: var(--accent-2);
+}
+
+.detail-box strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.detail-box p {
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+/* Footer */
+footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 80px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container { padding: 24px 16px; }
+  h1 { font-size: 22px; }
+  .brief-card { padding: 20px; border-radius: 12px; }
+  .track .detail-box { padding: 12px; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="badge">Live Daily</div>
+    <h1>大模型与 Agent 前沿</h1>
+    <p class="subtitle">双轨智报 · 巨头风向标 × 异类颠覆者 · 每日 08:30 自动更新</p>
+  </header>
+
+  <nav class="date-nav" id="dateNav"></nav>
+
+  <main id="briefsContainer">
+    <div class="loading">加载中...</div>
+  </main>
+
+  <footer>
+    <p>由 OpenClaw 自动维护 · 过滤算法：轨道一（巨头风向标）+ 轨道二（异类颠覆者）</p>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

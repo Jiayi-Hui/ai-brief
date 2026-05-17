@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2026-05-17",
+    "items": [
+      {
+        "track": 1,
+        "company": "Anthropic",
+        "title": "Claude Code 终端工具正式发布，支持 Agent 级代码库操作",
+        "detail": "Claude Code 从实验状态进入正式版，支持自动读取整个代码库上下文、执行终端命令、提交 PR。",
+        "impact": "开发者工作流从「AI 辅助编码」转向「AI 接管编码」。OpenClaw 体系可直接集成，代码生成成本将进一步压缩到人工的 1/50。"
+      },
+      {
+        "track": 2,
+        "company": "Bolt.new",
+        "title": "不开源但免费开放 entire stack 部署，月活突破 400 万",
+        "detail": "Bolt.new 允许用户用自然语言生成完整全栈应用并一键部署到其托管基础设施，不依赖用户自备 API Key。",
+        "insight": "「不烧大模型，但烧云资源」是新商业模式。大厂卖 Token，新锐卖「端到端结果」。用户不为模型付费，为「零配置产出」付费。"
+      }
+    ]
+  }
+]
