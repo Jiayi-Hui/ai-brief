@@ -2,6 +2,26 @@
   "briefs": [
     {
       "date": "2026-05-17",
+      "theme": "AI基础设施的国家化竞赛正式开始：OpenAI签下全球首个国家级全民接入协议",
+      "opening": "过去48小时最值得关注的不只是Anthropic的$900B估值传闻，而是OpenAI与马耳他政府签署的全球首个国家级ChatGPT Plus全民免费协议——所有马耳他居民完成AI素养课程后可免费使用一年。这不是企业SaaS deal，这是把AI接入当作公民数字权利的基础设施决策。AI竞争的维度正在从产品功能转向国家主权层面。",
+      "sections": [
+        {
+          "subtitle": "马耳他协议（5/16）与AI基础设施的国家主权化",
+          "body": "马耳他成为第一个将AI接入纳入公共服务框架的国家。约57万居民将通过University of Malta设计的课程获得AI素养认证，之后解锁ChatGPT Plus一年使用权。OpenAI framing this as \"intelligence as a national utility\"——这个表述本身比协议更有信号价值。它意味着AI公司正在主动游说政府把它们的平台纳入公共基础设施，类似当年的电力普及或互联网接入。对Anna工作的暗示：未来hedge fund的AI合规不再是\"企业自律\"，而是\"国家监管框架\"下的操作。Dymon的AI自动化迟早需要面对这个问题——不是要不要合规，是能不能把合规做成结构性优势。"
+        },
+        {
+          "subtitle": "Anthropic融资传闻（5/16）与资本层的估值垂直线",
+          "body": "Cryptobriefing报道Anthropic正negotiating另一轮$30B+融资，估值可能达到$900B，IPO或提前至10月。从$18B到$900B只用了两年半，$30B ARR四个月翻三倍。资本不是在赌产品，是在赌\"AI基础设施层\"的不可替代性。值得注意的是：新加坡GIC领投，Goldman Sachs和JPMorgan参与。这意味着主权财富基金和传统投行都在押注Anthropic作为OpenAI的结构性对冲。对Jay的Dymon Asia来说，这暗示AI领域正在形成\"双寡头基础设施\"格局——不是选OpenAI还是Anthropic的问题，是两者都不可绕过的问题。"
+        },
+        {
+          "subtitle": "Anna的FinancialNews系统——微观基础设施的同日完成",
+          "body": "昨天Anna完成了从AVD抓取Bloomberg/Reuters/FT到Cloudflare Pages PWA的完整pipeline。表面上是\"给老板做一个新闻爬虫\"，底层结构却与马耳他协议和Anthropic融资指向同一个趋势：信息流通的摩擦正在被系统性消除，控制信息管道的人获得不对称优势。她在实践中遇到的每一个坑——workers.dev DNS污染→改用pages.dev、FT订阅广告噪音→clean_article_text()过滤、Bloomberg反爬→接受部分失败、空白Chrome profile→下次改CDP挂已有Chrome——都是基础设施建设中真实的生产级问题。解决这些问题的人，不是\"会写脚本的人\"，是\"能搭建信息基础设施的人\"。"
+        }
+      ],
+      "closing": "当国家、资本巨头和个人同时争夺AI基础设施的控制权，信息管道的价值正在被重估。Anna昨天搭的系统不是爬虫，是一个微观版的alpha生成器。方向对了，下一步是让它更快、更稳定、更不可绕过。"
+    },
+    {
+      "date": "2026-05-17",
       "theme": "开发者正在自下而上重写企业AI的权力结构",
       "opening": "过去24小时最值得关注的信号不是某个产品发布，而是Ramp 5月AI Index里一个被很多人忽略的数据：Anthropic在付费企业客户占比上第一次超过了OpenAI（34.4% vs 32.3%）。这不是市场波动，是权力转移的底层信号。",
       "sections": [
