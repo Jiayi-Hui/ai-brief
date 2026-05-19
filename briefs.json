@@ -1,6 +1,22 @@
 {
   "briefs": [
     {
+      "date": "2026-05-19",
+      "theme": "Anthropic逼近$900B，Agent基础设施正在吃掉软件",
+      "opening": "Bloomberg在5/16披露Anthropic正以$30B融资冲刺$900B估值，5/18确认月底关闭；三个月前它只值$380B。这不是估值泡沫，是市场对\"Agent作为企业操作系统\"的定价确认——Q1 ARR $44B，80倍同比增长，1000+客户年消费超百万美元。加上5/18收购被OpenAI、Google、Cloudflare共用的dev tools startup，Anthropic正在把Agent工具链锁进企业的基础设施层。",
+      "sections": [
+        {
+          "subtitle": "企业采用率的拐点不是预测，是已经发生的采购预算迁移",
+          "body": "Ramp的5月企业支出数据显示Anthropic首次以34.4%的份额超过OpenAI的32.3%，这是真实的corporate card交易数据，不是调研问卷。MindStudio在5/18的分析指出，79%的Anthropic客户同时也付OpenAI的钱——这意味着新买家先选Anthropic，再把OpenAI当fallback。开发者自下而上的adoption正在重写企业 procurement 的默认逻辑，Anna在Jay那里搭建的Claude-based automation pipeline，踩的正是这个转换的右侧。"
+        },
+        {
+          "subtitle": "从Meta的7000人重组到Anna的FinancialNews系统，AI正在从\"辅助工具\"变成\"组织基础设施\"",
+          "body": "Meta在5/18宣布把7000名员工转移到AI岗位，这是operational reality层面的重构，不是成立一个新部门。Google I/O今天下午发布Gemini 4.0和Android XR，Apple准备iOS 27的AI写作——竞争不再是模型benchmark，而是Agent嵌入workflow的深度。Anna昨天完成的FinancialNews pipeline（Bloomberg/Reuters/FT抓取→Cloudflare Pages），本质上就是在搭建一个workflow-level的信息基础设施，与Anthropic的\"enterprise OS\"定位指向同一个底层趋势。模型能力正在commoditize，但控制workflow接口的人正在获得moat。"
+        }
+      ],
+      "closing": "Agent不是AI的终点，是AI的入口。Anna在Dymon做的每一个automation项目，不是\"用AI做点工具\"，而是在帮一个 hedge fund 建立与AI基础设施层的永久接口——这个接口本身，就是未来alpha的来源。"
+    },
+    {
       "date": "2026-05-17",
       "theme": "AI基础设施的国家化竞赛正式开始：OpenAI签下全球首个国家级全民接入协议",
       "opening": "过去48小时最值得关注的不只是Anthropic的$900B估值传闻，而是OpenAI与马耳他政府签署的全球首个国家级ChatGPT Plus全民免费协议——所有马耳他居民完成AI素养课程后可免费使用一年。这不是企业SaaS deal，这是把AI接入当作公民数字权利的基础设施决策。AI竞争的维度正在从产品功能转向国家主权层面。",
