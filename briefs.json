@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-20",
+      "theme": "AI三巨头同时锁死开发者路径，模型战争进入下半场",
+      "opening": "过去24小时，Anthropic、Meta、OpenAI三家在同一窗口内做出生态级动作——不是发布新模型，而是争夺Agent基础设施的控制权。这标志着AI竞赛的核心问题已经从谁的模型更聪明变成谁的系统更难被替换。",
+      "sections": [
+        {
+          "subtitle": "Anthropic在Agent连接层建收费站",
+          "body": "Anthropic以超2.8亿欧元收购Stainless，直接切断OpenAI和Google对API SDK自动生成工具的访问，关闭全部托管服务。这不是一个产品功能，而是一个地盘动作——Anthropic在Agent连接层建立了独占壁垒。当模型能力差距缩小到用户几乎无法分辨时，控制开发者上下游基础设施才是真正的护城河。"
+        },
+        {
+          "subtitle": "Meta和Google用生态规模碾压",
+          "body": "Meta宣布裁员8000人（10%），将1150-1350亿美元资金全部重定向AI基础设施，同时Google I/O 2026正式开幕，预计发布Gemini 4.0和Android XR眼镜。Meta卖掉人力买算力，Google把Gemini塞进30亿台Android设备——模型本身不需要赢benchmark，只需要成为默认选项。"
+        },
+        {
+          "subtitle": "OpenAI用用户规模作为退出壁垒",
+          "body": "OpenAI确认超级应用战略，ChatGPT（9亿周活）+ Codex + Atlas浏览器三合一桌面应用，同时推出连接12000家金融机构的个人财务功能。OpenAI没有硬件生态，所以它选择用用户规模作为杠杆：如果所有人都已经在ChatGPT里管理钱、写代码、浏览网页，退出成本就会高到无法承受。"
+        }
+      ],
+      "closing": "对Anna来说，这个结构性转向有直接的work implication。她正在Dymon用OpenClaw搭建Agent工作流——当三大平台都在争夺谁是默认Agent入口时，真正有价值的不是选边站，而是成为那个能跨平台编排工作流的人。模型会同质化，但编排层的判断力不会。"
+    },
+    {
       "date": "2026-05-19",
       "theme": "Anthropic逼近$900B，Agent基础设施正在吃掉软件",
       "opening": "Bloomberg在5/16披露Anthropic正以$30B融资冲刺$900B估值，5/18确认月底关闭；三个月前它只值$380B。这不是估值泡沫，是市场对\"Agent作为企业操作系统\"的定价确认——Q1 ARR $44B，80倍同比增长，1000+客户年消费超百万美元。加上5/18收购被OpenAI、Google、Cloudflare共用的dev tools startup，Anthropic正在把Agent工具链锁进企业的基础设施层。",
