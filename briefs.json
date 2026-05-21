@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-21",
+      "theme": "Google把AI订阅砍到$100，agent战争从'聊天'进入'接管'",
+      "opening": "Google I/O 2026最重的信号不是某个模型，而是$100的AI Ultra定价和Gemini Spark的24/7 agent。这标志着AI竞争从benchmark竞赛正式切换为'数字生活接管深度'的竞赛。Sundar Pichai说的'十年AI-first'其实是句铺垫——真正的动作是让Gemini从搜索框变成无处不在的操作系统层。",
+      "sections": [
+        {
+          "subtitle": "切面一：定价即战争",
+          "body": "Google把顶级AI订阅从$250砍到$100，同时用'compute-used'取代每日prompt限制——简单文本几乎不计费，复杂视频和agent任务吃掉配额。这不是降价，是定价模型的结构性重置：OpenAI的$200 Pro和Anthropic的订阅突然显得保守。更底层的是，Google捆绑了20TB云存储、YouTube Premium和Antigravity开发平台，$100不是买模型，是买整个数字生态的入口。对Anna在Dymon做的OpenClaw Agent编排来说，这意味着'选边站'的逻辑正在失效——用户的Google账户本身就是最深的编排节点，跨平台能力反而成为对抗生态锁死的稀缺技能。"
+        },
+        {
+          "subtitle": "切面二：Spark不是助手，是occupation",
+          "body": "Gemini Spark的演示很日常：自动发邮件、整理日程、监控inbox。但onboarding screen里那句'may do things like share your info or make purchases without asking'暴露真相——这是一个不需要你打开的agent，它在后台运行，用Chrome执行web任务，通过MCP连接第三方服务。Google从'帮你搜索'变成'替你执行'。Hassabis说AGI'就在几年内'——这话放在十年前是PR，现在配合Spark的架构，更像是内部时间表的泄露。对hedge fund的AI应用来说，agent执行层的合规边界（什么能自动做、什么需要human-in-the-loop）会成为新的风控维度。"
+        },
+        {
+          "subtitle": "切面三：马斯克败诉与Karpathy跳槽的合奏",
+          "body": "同一天，马斯克诉OpenAI的官司被陪审团不到两小时一致驳回——OpenAI的封闭营利模式获得法律确认。几乎同时，Andrej Karpathy宣布加入Anthropic。这两件事拼在一起看：OpenAI在法理上赢了封闭权，但人才正在向Anthropic流动。AI竞赛从来不是单维的，Google用生态和定价打一张牌，Anthropic用人才和安全叙事打另一张，OpenAI靠用户规模和模型迭代维持第三极。三极格局已经固化，但胜负手从'谁的模型更强'变成了'谁的agent离用户的数字生活更近'。"
+        }
+      ],
+      "closing": "Anna的work implication很直接：你正在Dymon构建的Agent编排层，价值不在于替代Spark或Claude，而在于连接它们——当每个平台都想独占用户时，跨平台编排就是反锁死的结构套利。继续推OpenClaw的multi-agent orchestration，这比选任何一家模型都重要。"
+    },
+    {
       "date": "2026-05-20",
       "theme": "AI三巨头同时锁死开发者路径，模型战争进入下半场",
       "opening": "过去24小时，Anthropic、Meta、OpenAI三家在同一窗口内做出生态级动作——不是发布新模型，而是争夺Agent基础设施的控制权。这标志着AI竞赛的核心问题已经从谁的模型更聪明变成谁的系统更难被替换。",
