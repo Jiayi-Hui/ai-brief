@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-22",
+      "theme": "特朗普推迟AI安全审查令：安全恐慌与竞争焦虑的撕裂",
+      "opening": "Anthropic的Mythos模型上个月在实战中挖出金融系统高危漏洞，这件事终于传导到了白宫——但传导方式出人意料。特朗普原定于本周四签署的AI行政令，在签署前数小时被他本人叫停，理由是担心审查程序拖累美国AI产业与中国的竞争。",
+      "sections": [
+        {
+          "subtitle": "切面一：草案本身不温和，推迟反而暴露更深的结构性撕裂",
+          "body": "这份EO要求前沿实验室在公开发布前90天向NSA等联邦机构共享模型，进行classified red-teaming。Treasury牵头组建漏洞清算所，CISA、NIST、ONCD全部参与。90天是政府偏好，行业在推动14天。这不是象征性监管，是要把AI模型纳入国家安全审查框架——与核武器出口管制同层级。但特朗普的推迟说明，即便是公开反对guardrails的政府，也在必须做点什么和不能妨碍竞争之间反复横跳。Politico的知情人士说得好：on the table and off the table and on the table and off。"
+        },
+        {
+          "subtitle": "切面二：Anthropic正在把安全能力变成品牌壁垒",
+          "body": "触发这一切的Anthropic，同一周内完成了三重加速：5月19日Andrej Karpathy宣布加入领导pretraining团队——用Claude来加速Claude自己的训练，这是AI-assisted research的范式确认；签下约300MW的xAI Colossus算力租赁，长期收入可能超400亿美元，直接补短板；发布20+法律垂直MCP连接器，瞄准企业AI第二高收入市场。加上MCP tunnels和self-hosted sandboxes让企业把Agent锁在自有基础设施内，Anthropic正在构建安全叙事+算力基础设施+开发者生态的全栈攻势。"
+        },
+        {
+          "subtitle": "切面三：Google I/O全面Agent化，三极格局固化",
+          "body": "Google I/O 2026把战略重心彻底转向Agent：Gemini 3.5 Flash定价落地、Spark成为24小时个人智能体、Antigravity 2.0支持并行subagent和背景任务。OpenAI那边，IPO传闻和Erdős单位距离问题的数学突破并行推进。三家路径已经清晰分化——OpenAI赌终端用户规模+资本市场化，Google赌操作系统级Agent嵌入，Anthropic赌安全可信+企业深度。没有一家在做同样的生意，这意味着Anna的跨平台Agent编排能力比选边站更有价值。"
+        }
+      ],
+      "closing": "特朗普推迟EO不代表问题消失。Mythos挖出的漏洞不会自己修复，中国AI也不会停下来等美国完成内部辩论。真正的问题是：谁能在安全和速度之间找到第三条路——而Anthropic正在赌，安全本身就是速度。对Anna来说，平台割据越严重，跨平台编排的alpha越明显。"
+    },
+    {
       "date": "2026-05-21",
       "theme": "Google把AI订阅砍到$100，agent战争从'聊天'进入'接管'",
       "opening": "Google I/O 2026最重的信号不是某个模型，而是$100的AI Ultra定价和Gemini Spark的24/7 agent。这标志着AI竞争从benchmark竞赛正式切换为'数字生活接管深度'的竞赛。Sundar Pichai说的'十年AI-first'其实是句铺垫——真正的动作是让Gemini从搜索框变成无处不在的操作系统层。",
