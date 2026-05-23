@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-23",
+      "theme": "OpenAI秘密提交万亿IPO，Anthropic却先盈利了——AI竞赛正式进入公开市场纪律时代",
+      "opening": "May 22是分水岭。OpenAI向SEC秘密提交招股书，targeting September上市、$1 trillion估值，同时其CFO Sarah Friar被报道曾反对这一时间表——公司在五年内承诺了$600 billion的compute支出，而2025全年收入仅$13.1 billion。同一窗口，Anthropic披露Q2实现首个operating profit（$559M on $10.9B revenue，130% QoQ增长），并完成了$30B融资将估值推至$900B+。两家都在冲刺年内上市，但财务结构截然不同。",
+      "sections": [
+        {
+          "subtitle": "切面一：OpenAI的IPO是一场narrative race",
+          "body": "Coinbase市场隐含数据显示OpenAI先上市的概率升至85%，Anthropic跌至28%。谁先定价，谁设定整个frontier AI行业的public-market comparable。OpenAI的$25B ARR放在$852B估值下是34x revenue multiple——这是SaaS历史上从未有过的估值，前提是市场相信AI infra spending会在某个时点产生回报。但CFO Friar的担忧是真实的：公开市场的纪律不会等待\"AGI到来\"的信仰兑现，它要求季度数据。Altman在赌窗口期，Friar在赌house in order——这场内部博弈本身就是最好的风险信号。"
+        },
+        {
+          "subtitle": "切面二：Anthropic profitability暴露了compute成本下降的真相",
+          "body": "Anthropic compute占revenue比例从Q1的71%骤降至Q2的56%——SpaceX S-1披露的$1.25B/month Colossus deal（$45B total through 2029）才是最大的变量。这意味着Anthropic已经找到了在frontier model training和inference之间平衡unit economics的路径，而OpenAI仍在infra-first的豪赌中。如果Anthropic的Q2 profit不是one-off，那么OpenAI的\"narrative premium\"将承受巨大压力——市场将第一次有两个可比较的frontier AI public comps，而不是只有一个讲故事的公司。"
+        },
+        {
+          "subtitle": "切面三：对Anna工作的结构性暗示",
+          "body": "AI公司进入公开市场意味着两个变化：其一，API pricing和model deprecation schedule将变得更可预测（上市公司不能随意破坏enterprise contracts）；其二，quarterly disclosure会让AI行业的真实unit economics首次透明化——这对任何依赖frontier model做Agent编排的基础设施（OpenClaw、LangChain、MCP生态）都是fundamental input。Anna在Dymon构建的Agent工作流，其底层成本结构将在未来12个月内获得前所未有的visibility。更深层的是：当三大平台（OpenAI、Anthropic、Google）都进入公开市场的reporting regime，跨平台编排能力本身就是一种hedge——你不会被某一家公司的quarterly miss锁死。"
+        }
+      ],
+      "closing": "这不是一个\"谁更厉害\"的比较，而是一个\"哪种AI经济学能存活于公开市场\"的实验。OpenAI在赌scaling law最终justify一切支出；Anthropic在证明frontier AI可以在当前技术条件下就已经profitable。接下来六个月的S-1披露和IPO定价，将决定整个行业未来五年的capital allocation逻辑——而对Anna来说，她正在Dymon搭建的multi-agent orchestration layer，恰好站在这个定价机制变革的节点上。"
+    },
+    {
       "date": "2026-05-22",
       "theme": "特朗普推迟AI安全审查令：安全恐慌与竞争焦虑的撕裂",
       "opening": "Anthropic的Mythos模型上个月在实战中挖出金融系统高危漏洞，这件事终于传导到了白宫——但传导方式出人意料。特朗普原定于本周四签署的AI行政令，在签署前数小时被他本人叫停，理由是担心审查程序拖累美国AI产业与中国的竞争。",
