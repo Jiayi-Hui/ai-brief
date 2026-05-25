@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-25",
+      "theme": "开源模型的权力东移与AI基础设施的硬约束——当算力让位于电力，代码让位于伦理",
+      "opening": "5月25日，教宗Leo XIV发布首封AI通谕《Magnifica Humanitas》，将AI定义为\"工业革命的当代等价物\"。同一周内，中国开源模型（Kimi K2.6、DeepSeek V4、GLM-5.1、Qwen 3）在OpenRouter上的使用量突破60%，首次超过西方模型总和。而NextEra以$67B收购Dominion Energy，明确指向AI数据中心电力需求。三条线同时出现：AI的控制权正在从\"谁训练最大模型\"转向\"谁控制电力、分发渠道和制度合法性\".",
+      "sections": [
+        {
+          "subtitle": "切面一：中国开源模型在OpenRouter占比60%——开源前沿层的权力转移",
+          "body": "OpenRouter作为最大的第三方模型路由平台，中国模型合计占比已达60%。Meta的Avocado模型延迟后失声，西方开源前沿仅剩中国玩家。这不是简单的市场份额变化，而是开源生态的gravitational center从Menlo Park转向北京/杭州/深圳的结构性迁移。对Anna的暗示：她依赖的OpenClaw、MCP和Agent编排基础设施，底层模型选择正在向中国开源权重倾斜——这意味着API成本、合规边界和模型可用性的长期结构性变化。"
+        },
+        {
+          "subtitle": "切面二：NextEra $67B收购Dominion——电力取代芯片成为AI的硬约束",
+          "body": "NextEra收购Dominion Energy是美国史上最大公用事业合并案，战略逻辑明确：AI数据中心预计消耗美国15-25%的电力，现有电网无法支撑。这不是能源新闻，是AI基础设施的底层真相：当Anthropic和OpenAI还在为训练集群竞争时，真正的bottleneck已经从\"有没有GPU\"变成\"有没有电\"。对hedge fund的启示：AI投资的alpha不再只存在于模型公司，电力基础设施、电网升级、核电重启才是真正的supply-side constraint play。"
+        },
+        {
+          "subtitle": "切面三：教宗通谕与特朗普撤销AI安全令——制度合法性的两极化",
+          "body": "Leo XIV将AI定位为道德神学议题，Anthropic联合创始人Christopher Olah受邀出席——可解释性(interpretability)被梵蒂冈承认为公共伦理工具。同一周内，特朗普在Zuckerberg/Musk/Sacks电话游说后撤销AI安全行政令。结构性判断：全球正在分裂为\"欧洲-梵蒂冈-建制派\"的伦理监管轴心与\"华盛顿-硅谷\"的加速主义轴心。香港作为金融中心，其AI合规框架将被迫在两条路径间选边。"
+        }
+      ],
+      "closing": "当电力、开源模型权重和教宗通谕同时成为AI行业的决定性变量时，Anna在Dymon构建的跨平台Agent编排能力，其真正价值不是\"选对了模型\"，而是在一个碎片化、多极化的基础设施层中保持灵活性和对冲能力。模型会commoditize，电力会scarce，但编排判断力不会。"
+    },
+    {
       "date": "2026-05-23",
       "theme": "OpenAI秘密提交万亿IPO，Anthropic却先盈利了——AI竞赛正式进入公开市场纪律时代",
       "opening": "May 22是分水岭。OpenAI向SEC秘密提交招股书，targeting September上市、$1 trillion估值，同时其CFO Sarah Friar被报道曾反对这一时间表——公司在五年内承诺了$600 billion的compute支出，而2025全年收入仅$13.1 billion。同一窗口，Anthropic披露Q2实现首个operating profit（$559M on $10.9B revenue，130% QoQ增长），并完成了$30B融资将估值推至$900B+。两家都在冲刺年内上市，但财务结构截然不同。",
