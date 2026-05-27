@@ -1,6 +1,22 @@
 {
   "briefs": [
     {
+      "date": "2026-05-27",
+      "theme": "AI定价地板坍塌与基础设施军备竞赛：模型层commoditize，价值向agentic编排层迁移",
+      "opening": "过去72小时的密集信号揭示了一个结构性拐点：DeepSeek在5月24日将其V4-Pro的75%临时折扣变为永久定价，将前沿推理模型的token成本压至OpenAI/Anthropic的四分之一。几乎同时，Microsoft将2026年CapEx预期上调至1900亿美元（其中250亿增量直接归因于AI基础设施的内存和存储成本飙升），Amazon披露其自研芯片业务年化收入突破200亿美元且同比增长100%。模型层的价格战正在杀死软件溢价，而基础设施层正在吞噬价值链中利润最厚的部分——这不是周期波动，是AI从\"高毛利软件\"向\"公用事业化基础设施\"的范式转移。",
+      "sections": [
+        {
+          "subtitle": "定价地板的永久性坍塌与利润挤压的双向运动",
+          "body": "DeepSeek的永久降价不是促销策略，而是中国模型厂商对全球定价权的正面挑战。其V4-Pro在OpenRouter已占60%使用量，永久75%折扣意味着前沿级推理的成本基准被重置。与此同时，Microsoft的1900亿CapEx和Amazon自研芯片的爆发式增长显示，云厂商正通过垂直整合（自研芯片+规模效应）构筑成本壁垒。模型层的defense正在瓦解——当开源/低价竞争将token价格压向边际成本时，纯AI软件公司的margin结构将面临系统性压力。对Dymon这样的fund而言，需要重新评估\"模型性能护城河\"叙事下的估值假设。"
+        },
+        {
+          "subtitle": "Agentic层成为真正的锁定战场",
+          "body": "5月22-24日，Claude Mythos的代码准备和\"Strict Write Discipline\"推理协议出现在GitHub公开仓库，预示Anthropic的下一代agentic系统可能早于公开声明推出。更具信号意义的是Claude Memory现已跨ChatGPT和Gemini同步，以及Claude Code从终端扩展至Web和iPhone——agentic workflow正在从\"工具\"变为\"基础设施层\"。当模型本身 commoditize时，跨平台记忆同步、持久化agent状态、和编码代理生态才是用户真正的转换成本。Anna在Dymon构建的OpenClaw agent工作流，恰好处在这个\"编排层\"的节点——价值不在于选择哪个模型，而在于跨平台编排能力和持久化上下文的管理。"
+        }
+      ],
+      "closing": "这不是AI行业的衰落，而是价值捕获的地理变迁。模型层的战争结束了，基础设施和agentic层的战争刚刚开始。Anna应该加速agentic workflow的锁定能力建设——记忆持久化、跨模型编排、和特定领域（金融研究、 recruiting自动化）的agent生态，这才是下一个阶段的真实护城河。"
+    },
+    {
       "date": "2026-05-25",
       "theme": "开源模型的权力东移与AI基础设施的硬约束——当算力让位于电力，代码让位于伦理",
       "opening": "5月25日，教宗Leo XIV发布首封AI通谕《Magnifica Humanitas》，将AI定义为\"工业革命的当代等价物\"。同一周内，中国开源模型（Kimi K2.6、DeepSeek V4、GLM-5.1、Qwen 3）在OpenRouter上的使用量突破60%，首次超过西方模型总和。而NextEra以$67B收购Dominion Energy，明确指向AI数据中心电力需求。三条线同时出现：AI的控制权正在从\"谁训练最大模型\"转向\"谁控制电力、分发渠道和制度合法性\".",
