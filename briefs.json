@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-28",
+      "theme": "Anthropic $900B融资正式close，AI竞赛从"规模信仰"切换到"盈利纪律"",
+      "opening": "过去24小时，Anthropic的$30B+融资轮在Sequoia、Dragoneer、Altimeter、Greenoaks联合领投下正式close，pre-money估值$900B+，超越OpenAI成为全球最有价值的私人AI公司。这不是又一轮泡沫——Q2预计实现首个运营盈利，年化收入已从一年前的$4B飙升至$30B+。资本市场第一次不是在为"AGI信仰"定价，而是在为已经发生的enterprise变现能力买单。",
+      "sections": [
+        {
+          "subtitle": "数字背后的结构性转折",
+          "body": "Claude Code单品年化$2.5B，1000+企业客户年消费超$100万，企业收入占比80%。更关键的是compute占revenue比例从Q1的71%骤降至Q2的56%——SpaceX $45B compute deal的效率优化正在释放margin。当Anthropic证明了frontier AI可以在当前技术条件下盈利，OpenAI的$1 trillion IPO叙事将面临前所未有的comparative pressure。两家都在冲刺年内上市，但财务结构截然不同：一个证明能赚钱，一个在赌scaling law最终justify一切。"
+        },
+        {
+          "subtitle": "Microsoft computer-use agents GA——无API世界的自动化正式产品化",
+          "body": "几乎同一窗口，Microsoft将Copilot Studio的computer-use agents推至全地域GA，成为首个提供生产级SLA的超大规模平台。OpenAI CUA + Claude Sonnet 4.5双模型可选，Azure Key Vault + Purview审计 + Cloud PC池完整治理。这意味着企业40-60%没有现代API的legacy系统，终于可以被Agent接管。约束从"有没有API"变成"成本能不能justify"——这是企业AI adoption的最后一个硬边界被打破。Microsoft还同步开源了Agent Governance Toolkit，覆盖OWASP Agentic Top 10，说明他们不仅想要agent的数量，更想要agent的可治理性。"
+        },
+        {
+          "subtitle": "对Anna工作的结构性暗示",
+          "body": "她在Dymon搭建的OpenClaw Agent工作流，核心价值不在于绑死某一家模型，而在于跨平台编排。Anthropic拿到$30B弹药后会在Claude Code和企业API上加速迭代；Microsoft GA意味着更多企业系统可被Agent接管。两头都在扩张，中间层的跨模型编排和治理反而更稀缺。AI公司进入公开市场还意味着API定价和model deprecation将变得更可预测——这对任何依赖frontier model做Agent编排的基础设施都是fundamental input。"
+        }
+      ],
+      "closing": "估值天花板被捅破之后，真正的比赛才刚开始。Anthropic证明了AI能赚钱，下一步是谁能持续赚更多——以及，谁能在不同生态之间搭好桥。"
+    },
+    {
       "date": "2026-05-27",
       "theme": "AI定价地板坍塌与基础设施军备竞赛：模型层commoditize，价值向agentic编排层迁移",
       "opening": "过去72小时的密集信号揭示了一个结构性拐点：DeepSeek在5月24日将其V4-Pro的75%临时折扣变为永久定价，将前沿推理模型的token成本压至OpenAI/Anthropic的四分之一。几乎同时，Microsoft将2026年CapEx预期上调至1900亿美元（其中250亿增量直接归因于AI基础设施的内存和存储成本飙升），Amazon披露其自研芯片业务年化收入突破200亿美元且同比增长100%。模型层的价格战正在杀死软件溢价，而基础设施层正在吞噬价值链中利润最厚的部分——这不是周期波动，是AI从\"高毛利软件\"向\"公用事业化基础设施\"的范式转移。",
