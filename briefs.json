@@ -1,9 +1,29 @@
 {
   "briefs": [
     {
+      "date": "2026-05-29",
+      "theme": "企业AI部署层完成阵营固化：Claude锁定110万专业人士，OpenAI被迫自建咨询军",
+      "opening": "过去48小时，企业AI的中间层完成了结构性锁定。Deloitte（470K员工）、KPMG（276K）、PwC（30K认证）全部选择Claude作为生产级AI平台，合计覆盖全球110万专业人士——这不是试点，是咨询公司向其全球客户群发出的隐性产品推荐。与此同时，OpenAI以0亿DeployCo正面回应，试图用自建咨询军夺回企业部署权。",
+      "sections": [
+        {
+          "subtitle": "Claude的渠道垄断已成事实",
+          "body": "Anthropic的真正护城河不是模型性能，是咨询公司的分销网络。当三大Big Four都成为Claude的部署渠道，每一家客户看到的AI解决方案底层都是Claude。5月28日Claude Security公测进一步加固了这一逻辑——从编码助手到安全扫描，Anthropic正在企业workflow中建立不可替代性。对Anna的启示：她做OpenClaw Agent编排，价值不在于选择哪家模型，而在于跨平台workflow的整合深度。"
+        },
+        {
+          "subtitle": "OpenAI的自救与字节的分岔路径",
+          "body": "OpenAI DeployCo花0亿收购Tomoro、派出150名Forward Deployed Engineers直接入驻客户——这是Palantir模式的AI版，也是OpenAI在失去25%企业API份额后的自救。但与此同时，字节跳动选择完全不同的路径：5月27日Bloomberg报道字节计划0B AI基础设施投资（几乎全额来自2025年0B利润），同时自研芯片。不是通过咨询公司渗透，而是通过垂直整合建立基础设施主权。两条路径的分化意味着：未来不是通用AI的赢家通吃，而是不同商业结构适应不同监管环境和资本约束。"
+        },
+        {
+          "subtitle": "州级监管开始定价渠道优势",
+          "body": "5月28日Illinois SB 315要求前沿AI公司（OpenAI、Anthropic、Google DeepMind）进行第三方安全审计；加拿大隐私专员裁定ChatGPT违反隐私法。这意味着嵌入深度的优势正在被合规成本重新定价。咨询公司推荐的Claude方案，未来可能需要附加审计成本——这正是Anthropic安全品牌溢价的价值所在。"
+        }
+      ],
+      "closing": "企业AI的竞争已经从模型benchmark转向替换成本。Anna在Dymon的Agent工作，应该假设未来18个月企业客户会被Claude深度嵌入，而她的价值在于：当客户已经习惯Claude Code和Claude Cowork时，如何用OpenClaw做跨平台编排，而不是另起炉灶。"
+    },
+    {
       "date": "2026-05-28",
-      "theme": "Anthropic $900B融资正式close，AI竞赛从"规模信仰"切换到"盈利纪律"",
-      "opening": "过去24小时，Anthropic的$30B+融资轮在Sequoia、Dragoneer、Altimeter、Greenoaks联合领投下正式close，pre-money估值$900B+，超越OpenAI成为全球最有价值的私人AI公司。这不是又一轮泡沫——Q2预计实现首个运营盈利，年化收入已从一年前的$4B飙升至$30B+。资本市场第一次不是在为"AGI信仰"定价，而是在为已经发生的enterprise变现能力买单。",
+      "theme": "Anthropic $900B融资正式close，AI竞赛从《规模信仰》切换到《盈利纪律》",
+      "opening": "过去24小时，Anthropic的$30B+融资轮在Sequoia、Dragoneer、Altimeter、Greenoaks联合领投下正式close，pre-money估值$900B+，超越OpenAI成为全球最有价值的私人AI公司。这不是又一轮泡沫——Q2预计实现首个运营盈利，年化收入已从一年前的$4B飙升至$30B+。资本市场第一次不是在为《AGI信仰》定价，而是在为已经发生的enterprise变现能力买单。",
       "sections": [
         {
           "subtitle": "数字背后的结构性转折",
@@ -11,7 +31,7 @@
         },
         {
           "subtitle": "Microsoft computer-use agents GA——无API世界的自动化正式产品化",
-          "body": "几乎同一窗口，Microsoft将Copilot Studio的computer-use agents推至全地域GA，成为首个提供生产级SLA的超大规模平台。OpenAI CUA + Claude Sonnet 4.5双模型可选，Azure Key Vault + Purview审计 + Cloud PC池完整治理。这意味着企业40-60%没有现代API的legacy系统，终于可以被Agent接管。约束从"有没有API"变成"成本能不能justify"——这是企业AI adoption的最后一个硬边界被打破。Microsoft还同步开源了Agent Governance Toolkit，覆盖OWASP Agentic Top 10，说明他们不仅想要agent的数量，更想要agent的可治理性。"
+          "body": "几乎同一窗口，Microsoft将Copilot Studio的computer-use agents推至全地域GA，成为首个提供生产级SLA的超大规模平台。OpenAI CUA + Claude Sonnet 4.5双模型可选，Azure Key Vault + Purview审计 + Cloud PC池完整治理。这意味着企业40-60%没有现代API的legacy系统，终于可以被Agent接管。约束从《有没有API》变成《成本能不能justify》——这是企业AI adoption的最后一个硬边界被打破。Microsoft还同步开源了Agent Governance Toolkit，覆盖OWASP Agentic Top 10，说明他们不仅想要agent的数量，更想要agent的可治理性。"
         },
         {
           "subtitle": "对Anna工作的结构性暗示",
