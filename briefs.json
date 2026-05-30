@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-30",
+      "theme": "Anthropic $65B overtakes OpenAI：企业AI路径的定价权转移",
+      "opening": "过去24小时，Anthropic确认完成$65 billion Series H，post-money估值$965 billion，正式超越OpenAI的$852 billion。三个月内收入从$14B ARR跳到$47B。这不是又一轮融资，是全球最有价值AI lab的位子换了人坐。",
+      "sections": [
+        {
+          "subtitle": "Claude的渠道垄断已成事实",
+          "body": "Anthropic的真正护城河不是模型性能，是咨询公司的分销网络。Deloitte（470K员工）、KPMG（276K）、PwC（30K认证）全部选择Claude作为生产级AI平台，合计覆盖110万专业人士。5月28日Claude Opus 4.8发布，Dynamic Workflows让企业能编排AI subagent swarm——从编码助手到安全扫描，Anthropic正在企业workflow中建立不可替代性。对Anna的启示：她做OpenClaw Agent编排，价值不在于选择哪家模型，而在于跨平台workflow的编排能力。"
+        },
+        {
+          "subtitle": "芯片制造商直接投资模型公司，供应链纵向整合信号",
+          "body": "Samsung、SK Hynix、Micron作为战略投资者参与Series H——这是芯片制造商首次直接投资前沿模型公司。同时Anthropic与Amazon签署5GW算力协议、与Google/Broadcom签署5GW TPU协议、每月向SpaceX支付$12.5B计算费用。供应链正在从'卖铲子'变成'投矿场'。OpenAI 5月22日提交的confidential S-1现在面临一个市值更高的竞争对手，Forge Global预计Anthropic IPO窗口在2026年10月。"
+        },
+        {
+          "subtitle": "SpaceX IPO将同时暴露xAI财务黑洞",
+          "body": "SpaceX投资者路演6月4日开始，6月11日定价，6月12日交易。其S-1（5月20日提交）披露了xAI的财务状况：$6.4B亏损对$3.2B收入。这意味着当SpaceX以$1.75T估值上市时，市场将同时消化xAI的失血速度。Anna之前在Dymon的OpenClaw Agent工作流——Jay可能关注的是'如何用AI替代人力成本'，而Anthropic $47B收入恰恰证明了这条路径的市场规模。"
+        }
+      ],
+      "closing": "企业AI的beta已经被定价进$965B。下一步看OpenAI的回应和10月IPO窗口。"
+    },
+    {
       "date": "2026-05-29",
       "theme": "企业AI部署层完成阵营固化：Claude锁定110万专业人士，OpenAI被迫自建咨询军",
       "opening": "过去48小时，企业AI的中间层完成了结构性锁定。Deloitte（470K员工）、KPMG（276K）、PwC（30K认证）全部选择Claude作为生产级AI平台，合计覆盖全球110万专业人士——这不是试点，是咨询公司向其全球客户群发出的隐性产品推荐。与此同时，OpenAI以0亿DeployCo正面回应，试图用自建咨询军夺回企业部署权。",
