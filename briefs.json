@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-05-31",
+      "theme": "EAGLE 3.1让推理成本再降3-5x：AI竞赛从\"模型能力\"进入\"边际成本趋零\"",
+      "opening": "May 30，EAGLE 3.1发布，解决speculative decoding中的attention drift问题，推理速度提升3-5x。这不是又一项技术优化，而是AI inference成本曲线上的又一道陡峭下降。当推理成本持续塌缩，模型层的竞争逻辑正在被重写。",
+      "sections": [
+        {
+          "subtitle": "EAGLE 3.1修复attention drift：推理效率的结构性突破",
+          "body": "speculative decoding通过让小模型\"打草稿\"、大模型\"验证\"来加速，但draft token的attention pattern会与target model diverge。EAGLE 3.1的lightweight correction mechanism解决了这个问题，让3-5x speedup成为production-ready。对Anna的OpenClaw Agent工作，这意味着agent的推理成本正在快速趋近于零——部署100个subagent的边际成本，很快会和开一个Chrome tab一样低。"
+        },
+        {
+          "subtitle": "OpenAI的FGF框架：防御性叙事，不是进攻",
+          "body": "May 29，OpenAI发布Frontier Governance Framework，试图用\"安全治理\"争夺叙事主导权。但FGF是框架，不是产品。在Anthropic $965B估值和$47B收入的现实面前，OpenAI的防御性姿态暴露了一个结构性焦虑：它在企业部署速度上被甩开，只能靠监管叙事来减缓竞争对手的势头。对Anna的暗示：平台选择正在从\"谁更聪明\"变成\"谁更便宜、更稳定、更难被替换\"。"
+        },
+        {
+          "subtitle": "Meta $145B云基建与DuckDuckGo 30%增长：平台的扩张与用户的反抗",
+          "body": "May 30的weekly summary显示Meta正在砸$145B建云基础设施，同时DuckDuckGo安装量增长30%——用户开始反抗AI答案在搜索中的强制推送。两条信号合起来看：平台在争夺AI基础设施的控制权，但用户也在反抗被锁死在单一平台。对Anna的OpenClaw跨平台编排工作，这意味着\"反锁死\"本身就是一种结构性需求。"
+        }
+      ],
+      "closing": "EAGLE 3.1的3-5x speedup不是孤立的技术新闻，它是AI成本曲线上的又一个拐点。当推理成本趋近于零，agent的规模化部署将从\"成本约束\"变成\"治理约束\"。Anna在Dymon搭建的OpenClaw Agent编排层，其价值不在于绑死某一家模型，而在于在成本塌缩中保持跨平台的灵活性和对冲能力。"
+    },
+    {
       "date": "2026-05-30",
       "theme": "Anthropic $65B overtakes OpenAI：企业AI路径的定价权转移",
       "opening": "过去24小时，Anthropic确认完成$65 billion Series H，post-money估值$965 billion，正式超越OpenAI的$852 billion。三个月内收入从$14B ARR跳到$47B。这不是又一轮融资，是全球最有价值AI lab的位子换了人坐。",
