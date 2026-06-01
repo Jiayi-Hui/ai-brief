@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-01",
+      "theme": "Mythos公开倒计时：AI漏洞发现能力即将从实验室特权变为公共基础设施",
+      "opening": "Anthropic今天首次明确给出时间表：Claude Mythos Preview将在'未来数周内'公开。过去一个月，Project Glasswing已发现23,019个软件漏洞——包括27年历史的OpenBSD bug和16年的FFmpeg缺陷。作为直接回应，IBM和Red Hat宣布部署20,000工程师、投入$5B建立开源漏洞清理中心。这不是一场普通的产品发布，而是网络安全行业底层权力结构的转移。",
+      "sections": [
+        {
+          "subtitle": "Mythos的能力边界正在重新定义'安全'",
+          "body": "Mythos不是又一个代码审查工具。它是Anthropic内部评估为'能在10次尝试中完成32步模拟企业网络攻击'的模型。目前仅限约50家Glasswing合作伙伴使用（包括Apple、Google、Microsoft、Cloudflare），即将公开意味着任何拥有enterprise API的组织都能获得自主漏洞发现能力。IBM今天宣布$5B开源清理项目，本质上是对这一能力的防御性回应——当AI能自动发现漏洞时，人类补丁的速度就成了瓶颈。对Anna在Dymon的工作来说，这意味着任何持有software infrastructure的portfolio公司，其cyber risk valuation都需要重新建模。"
+        },
+        {
+          "subtitle": "Microsoft Build前夕的供应链叛离",
+          "body": "Microsoft将在明天（6月2日）的Build 2026上发布自研MAI模型，包括专门的coding model来夺回被Claude Code抢走的企业开发者。Mustafa Suleyman团队此前被OpenAI合作协议限制训练顶级模型，4月重新谈判后才解绑。Reuters直接引用：'rivals' coding tools -- notably Anthropic's Claude Code -- have pulled ahead.' 这是Microsoft首次公开承认内部数据显示Claude Code已超越Copilot。更深层信号：即便是OpenAI最大的金主和分发渠道，也在用'自研+多元化'对冲单供应商风险。AI基础设施的供应链逻辑正在从'选最好的模型'变成'建混合栈'。"
+        },
+        {
+          "subtitle": "华盛顿叙事与开发者现实的撕裂",
+          "body": "美国财政部长在同一天宣称中国在AI上'大幅落后'，但OpenRouter数据却显示中国开源权重模型已占据开发者token流量的多数。两条信息可以同时成立——前者讲的是frontier lab的能力差距，后者讲的是开源生态的渗透深度。但撕裂本身就是信号：当中国模型通过开源路径绕过芯片管制、获得全球开发者心智份额时，传统的出口控制框架正在失效。对Anna在hedge fund的宏观判断来说，这意味着'AI竞赛'的评分标准正在从'谁有最强的闭源模型'变成'谁控制了最多的开源路由节点'。"
+        }
+      ],
+      "closing": "Mythos的公开将是一个不可逆的行业拐点。当AI自主发现漏洞的能力从50家特权伙伴扩散到任何企业，网络安全的供需关系会被彻底重写。Anna的Agent工作流——以及Dymon的任何software exposure——都需要假设：未来6个月，代码层面的风险发现速度会比人类补丁速度快一个数量级。"
+    },
+    {
       "date": "2026-05-31",
       "theme": "EAGLE 3.1让推理成本再降3-5x：AI竞赛从\"模型能力\"进入\"边际成本趋零\"",
       "opening": "May 30，EAGLE 3.1发布，解决speculative decoding中的attention drift问题，推理速度提升3-5x。这不是又一项技术优化，而是AI inference成本曲线上的又一道陡峭下降。当推理成本持续塌缩，模型层的竞争逻辑正在被重写。",
