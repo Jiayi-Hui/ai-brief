@@ -1,6 +1,22 @@
 {
   "briefs": [
     {
+      "date": "2026-06-04",
+      "theme": "Microsoft的Agent平台自立：从模型经销商到工作流操作系统",
+      "opening": "6月2日Microsoft Build大会上，Azure Agent Mesh和Windows Agent Framework 1.0的发布标志着一个隐蔽但关键的转向：Microsoft正在系统性地构建自己的agent orchestration基础设施，减少对单一模型vendor的依赖。Project Polaris——Microsoft自研的AI coding model——将在8月取代GPT-4成为GitHub Copilot的后端。同一天，Pentagon宣布$422M的AI enterprise software agreement，built on Azure Agent Mesh。这不是Microsoft「背叛」OpenAI的drama，而是平台层成熟的结构性信号。",
+      "sections": [
+        {
+          "subtitle": "平台层自立与资本重分配",
+          "body": "当orchestration layer变得足够重要，没人愿意把它外包。Azure Agent Mesh是一个multi-agent协调层，Windows Agent Framework 1.0把agent capability直接built into Windows。这意味着Microsoft正在从「模型经销商」转型为「AI工作流的操作系统」。Pentagon的$422M deal是硬的背书：政府contract的选择标准是production readiness，不是hype。对于hedge fund而言，AI value chain的profit pool正在从raw model层向platform层转移。"
+        },
+        {
+          "subtitle": "模型commoditization与orchestration价值",
+          "body": "Project Polaris取代GPT-4进入Copilot，说明模型层正在commoditize。当平台层可以swap底层模型而不影响用户体验时，模型的pricing power就会下降。这解释了为什么multi-model策略正在获得traction——平台层不在乎下面跑的是什么，只要API兼容。对于Anna的OpenClaw workflow，这是一个直接的映射：cross-platform agent orchestration的价值正在被大规模验证，你不一定要绑定在单一模型上。"
+        }
+      ],
+      "closing": "Agent platform层正在 crystallize。平台锁定会加速，但cross-platform的价值也会更高。Infra门槛被拉到极高，但workflow integration和agent orchestration的窗口仍然对nimble players开放。"
+    },
+    {
       "date": "2026-06-02",
       "theme": "Anthropic登顶private AI估值榜首，Microsoft Build自研模型栈揭幕——平台-资本结构同步重组",
       "opening": "过去48小时，AI行业的权力结构发生了两次同步位移。6月1日Anthropic以965B估值完成65B融资，首次在private market超过OpenAI；6月2日Microsoft Build开幕，Satya将正式发布MAI模型家族——这是Microsoft首次展示不依赖OpenAI的完整自研模型栈。两件事指向同一个底层判断：OpenAI-Microsoft axis作为行业default power structure已经松动，AI正在从model competition进入platform-capital nexus restructuring阶段。",
