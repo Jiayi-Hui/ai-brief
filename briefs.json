@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-05",
+      "theme": "AI监管悖论：OpenAI拒绝政府审批却要求政府掏钱",
+      "opening": "OpenAI正在向美国国会施压，要求为AI安全测试提供更多公共资金，但坚决反对建立强制性的政府审批制度。同一天，OpenAI、Anthropic、Microsoft和Google DeepMind签署联名信，支持对合成DNA和RNA订单进行强制筛查。这不是巧合——AI行业正在用\"自我规制\"替代\"政府监管\"，用\"钱给你、权给我\"的范式重新定义AI治理。",
+      "sections": [
+        {
+          "subtitle": "OpenAI的\"监管套利\"逻辑",
+          "body": "Altman的证词揭示了一个结构性悖论：AI公司既需要政府背书来降低公众风险焦虑，又不能让政府掌握发布开关。这本质上是在争夺AI治理的\"规则制定权\"——谁定义安全标准，谁就控制了行业准入。对于对冲基金这样的受监管实体，这意味着合规框架将长期悬而未决，不能等SEC/FCA给出明确规则，必须自己先建立AI使用治理体系。"
+        },
+        {
+          "subtitle": "生物安全自我规制的\"行业联盟\"逻辑",
+          "body": "四家AI巨头同时支持合成DNA/RNA筛查，这不是出于对生物安全的突然觉醒，而是主动的\"监管替代\"策略——通过证明行业可以自我规制，来削弱政府强制审批的正当性。对Anna在Dymon的AI自动化工作而言，这意味着未来3-6个月可能不会有明确的AI工具使用禁令，但行业自我规制的标准（如数据审计、模型使用日志）可能会迅速成为\"事实上的合规要求\"。"
+        },
+        {
+          "subtitle": "芯片与资本的\"双重需求\"仍在加速",
+          "body": "TSMC在同一天声明AI芯片需求\"没有放缓迹象\"，而SpaceX的IPO路演也于6月4日启动，目标750亿美元融资、1.75万亿美元估值。这提醒我们：无论监管如何博弈，资本和算力的供给仍在指数级扩张。监管争的是\"谁控制开关\"，但开关背后的电流正在越来越大。"
+        }
+      ],
+      "closing": "AI治理的底层真相是：权力永远不会真空，只是在转移。"
+    },
+    {
       "date": "2026-06-04",
       "theme": "Microsoft的Agent平台自立：从模型经销商到工作流操作系统",
       "opening": "6月2日Microsoft Build大会上，Azure Agent Mesh和Windows Agent Framework 1.0的发布标志着一个隐蔽但关键的转向：Microsoft正在系统性地构建自己的agent orchestration基础设施，减少对单一模型vendor的依赖。Project Polaris——Microsoft自研的AI coding model——将在8月取代GPT-4成为GitHub Copilot的后端。同一天，Pentagon宣布$422M的AI enterprise software agreement，built on Azure Agent Mesh。这不是Microsoft「背叛」OpenAI的drama，而是平台层成熟的结构性信号。",
