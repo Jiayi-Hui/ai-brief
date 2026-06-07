@@ -1,6 +1,22 @@
 {
   "briefs": [
     {
+      "date": "2026-06-07",
+      "theme": "The capability-governance gap is widening",
+      "opening": "Anthropic issued a rare public warning this week that its AI systems may soon be capable of self-improvement without human oversight, and urged the industry to develop a \"brake pedal\" for models that begin improving themselves faster than humans can monitor. This is a specific technical admission, not routine safety PR—current evaluation frameworks were designed for static models that update every few months, not for systems that can update their own weights during deployment.",
+      "sections": [
+        {
+          "subtitle": "The synchronized capability leap",
+          "body": "The context is a synchronized capability leap from the major labs: GPT-5.6, Gemini 3.5 Pro, and Claude Mythos 1 are all expected within weeks (June 4 signals). When all three release simultaneously, the competitive question shifts from \"which model is better\" to \"which integration layer can orchestrate them all.\" This is the moment when model-agnostic architecture becomes a strategic necessity, not just a nice-to-have."
+        },
+        {
+          "subtitle": "The governance scramble",
+          "body": "On the governance side, Trump and Sanders converged this week on government ownership stakes in AI companies (June 6). While near-term implementation probability is low, the structural signal is clear: the laissez-faire era of AI governance is ending. Both left and right are treating AI as a strategic asset requiring public control, which will complicate the IPO landscape for OpenAI and Anthropic."
+        }
+      ],
+      "closing": "The implication for builders is straightforward: design for model-agnostic orchestration and prepare for a regulatory environment that treats AI as infrastructure, not software. The next six weeks will determine whether the industry can self-regulate or whether governments step in with ownership mandates."
+    },
+    {
       "date": "2026-06-06",
       "theme": "AI Agent基础设施层的'6月4日风暴'：企业级部署框架密集发布，标志着Agent从开发工具到商业操作系统的跃迁已确认",
       "opening": "过去48小时，Meta、Microsoft、NVIDIA、Cisco、Walrus等七家企业同时发布了企业级AI Agent部署框架——这不是巧合，而是市场共识的同步确认。6月4日成为了AI Agent商业化史上的一个密集拐点，标志着Agent从开发者玩具进化为企业软件栈的新基础设施层。",
@@ -179,7 +195,7 @@
     {
       "date": "2026-05-28",
       "theme": "Anthropic $900B融资正式close，AI竞赛从《规模信仰》切换到《盈利纪律》",
-      "opening": "过去24小时，Anthropic的$30B+融资轮在Sequoia、Dragoneer、Altimeter、Greenoaks联合领投下正式close，pre-money估值$900B+，超越OpenAI成为全球最有价值的私人AI公司。这不是又一轮泡沫——Q2预计实现首个运营盈利，年化收入已从一年前的$4B飙升至$30B+。资本市场第一次不是在为《AGI信仰》定价，而是在为已经发生的enterprise变现能力买单。",
+      "opening": "过去24小时，Anthropic的$30B+融资轮在Sequoia、Dragoneer、Altimeter、Greenoaks联合领投下正式close，pre-money估值$900B+，超越OpenAI成为全球最有价值的私人AI公司。这不是估值泡沫，是市场对\"Agent作为企业操作系统\"的定价确认——Q1 ARR $44B，80倍同比增长，1000+客户年消费超百万美元。加上5/18收购被OpenAI、Google、Cloudflare共用的dev tools startup，Anthropic正在把Agent工具链锁进企业的基础设施层。",
       "sections": [
         {
           "subtitle": "数字背后的结构性转折",
