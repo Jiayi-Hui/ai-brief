@@ -1,6 +1,21 @@
 {
   "briefs": [
     {
+      "date": "2026-06-08",
+      "theme": "WWDC 2026: Apple放弃自建frontier model，multi-model中立是结构性赌博，但赌局 backdrop 是政府正在要求入股AI公司",
+      "opening": "今天Apple的WWDC keynote上，Tim Cook最后一次以CEO身份宣布了一件结构性的事：Apple不再试图自己build frontier model，而是每年付Google 10亿美元买Gemini，同时让ChatGPT、Gemini、Claude在同一个iPhone里竞争。这不是Siri变聪明了，这是Apple承认自己在AI模型层已经输了，于是把战场转移到平台层——做Switzerland，收过路费。但 backdrop 是6月5-6日连续两天爆出的政治信号：Bernie Sanders提出对frontier AI公司征收50% stock tax，Trump说政府应该成为AI革命的partner。",
+      "sections": [
+        {
+          "subtitle": "Apple的multi-model Extensions与平台赌注",
+          "body": "Apple的multi-model Extensions系统结束了OpenAI在iPhone里两年的exclusivity。Gemini是default，但用户可以在三大模型之间切换，每个有distinct voice。Apple的赌注是：privacy-preserving inference at scale比owning the model更有差异化。Private Cloud Compute如果成功，Apple就是唯一能在20亿设备上做privacy-guaranteed AI inference的平台；如果失败，Apple就是下一个Kodak。这个逻辑是对的，但执行窗口正在缩小。"
+        },
+        {
+          "subtitle": "Anna工作上下文：编排层的价值重估",
+          "body": "Apple把AI layer变成platform utility，意味着hedge fund级别的AI deployment也需要model-agnostic architecture。从5月20日memory记录看，Dymon的OpenClaw Agent工作流恰好处在编排层——价值不在选边站，而在跨平台编排。现在这个问题更紧迫了：当平台本身变成multi-model，orchestration layer的value proposition是上升还是下降？答案取决于你能不能build比Apple更好的routing logic。"
+        }
+      ],
+      "closing": "WWDC 2026的实质不是Siri变聪明了，而是Apple宣布自己不做AI战争的将军，做军火商的 Switzerland。问题是，当所有军火商都被政府征税时，中立者还有安全边界吗？"
+    },
       "date": "2026-06-07",
       "theme": "The capability-governance gap is widening",
       "opening": "Anthropic issued a rare public warning this week that its AI systems may soon be capable of self-improvement without human oversight, and urged the industry to develop a \"brake pedal\" for models that begin improving themselves faster than humans can monitor. This is a specific technical admission, not routine safety PR—current evaluation frameworks were designed for static models that update every few months, not for systems that can update their own weights during deployment.",
