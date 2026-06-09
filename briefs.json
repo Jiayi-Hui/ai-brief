@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-09",
+      "theme": "Apple的AI中立策略遭遇EU监管围墙——平台层与主权层的首次正面冲突",
+      "opening": "6月8日WWDC keynote确认了所有rumor，但也暴露了一个昨天简报无法预判的现实：Apple的AI Extensions框架——让ChatGPT、Gemini、Claude在同一个iPhone里竞争——被EU regulators直接拒绝。Apple明确声明Siri AI不会随iOS 27在EU上线。这是全球第一次有旗舰AI功能因平台监管被地理封锁，标志着AI战争的战场从模型层、平台层扩展到了主权层。",
+      "sections": [
+        {
+          "subtitle": "平台赌注的技术确认与执行时间表",
+          "body": "Keynote确认了AI Extensions框架——用户可以在Apple Intelligence内选择不同的AI模型作为默认助手，每个有distinct voice和personality。Gemini是default，但ChatGPT和Claude也在选项中。Apple的逻辑是：它不做模型，做privacy-preserving的model-agnostic inference层。但Siri AI要到今年晚些时候才public beta，且iPhone 15 Pro以下机型被排除。这意味着Apple的multi-model中立不是现在能用的feature，而是一个秋季才可能兑现的承诺——在AI这个速度的行业，三个月是forever。"
+        },
+        {
+          "subtitle": "EU DMA的实质判断与全球先例",
+          "body": "Apple在press release中明确说：'EU regulators did not accept any of Apple's proposed solutions to bring Siri AI to the EU while safely supporting other virtual assistants.' 翻译过来：EU不认可Apple的'AI Extensions'框架是足够开放的。Apple以为'允许多个模型'就能满足监管，但EU要的是平台控制权的实质性开放——包括数据如何流动、模型如何集成、用户如何切换。这与App Store的DMA斗争完全一致：Siri AI被geo-blocked是EU给全球科技平台的一个信号，AI integration不是你可以单方面定义的。"
+        },
+        {
+          "subtitle": "Anna工作上下文：合规维度的扩展",
+          "body": "Apple的AI Extensions框架和EU的封锁共同指向一个判断：未来AI部署的合规复杂度将急剧上升。如果EU对Apple的'开放'框架都不满意，那么更小的AI deployment——比如hedge fund的internal agent workflow——面临的合规风险只高不低。Dymon的AI recruitment和research assistant工作流应该评估EU data residency和platform neutrality要求，特别是如果涉及CV parsing或market data analysis。multi-model中立是技术前提，但不再是合规护身符。"
+        }
+      ],
+      "closing": "Apple试图成为AI平台的Switzerland，但EU表明Switzerland也需要签证。平台层的中立不是通行证，主权层有自己的规则。对于AI builders，这意味着多模型中立是必要但不充分的条件——真正的竞争力在于能否在监管围墙内仍然运转。"
+    },
+    {
       "date": "2026-06-08",
       "theme": "WWDC 2026: Apple放弃自建frontier model，multi-model中立是结构性赌博，但赌局 backdrop 是政府正在要求入股AI公司",
       "opening": "今天Apple的WWDC keynote上，Tim Cook最后一次以CEO身份宣布了一件结构性的事：Apple不再试图自己build frontier model，而是每年付Google 10亿美元买Gemini，同时让ChatGPT、Gemini、Claude在同一个iPhone里竞争。这不是Siri变聪明了，这是Apple承认自己在AI模型层已经输了，于是把战场转移到平台层——做Switzerland，收过路费。但 backdrop 是6月5-6日连续两天爆出的政治信号：Bernie Sanders提出对frontier AI公司征收50% stock tax，Trump说政府应该成为AI革命的partner。",
@@ -16,6 +36,7 @@
       ],
       "closing": "WWDC 2026的实质不是Siri变聪明了，而是Apple宣布自己不做AI战争的将军，做军火商的 Switzerland。问题是，当所有军火商都被政府征税时，中立者还有安全边界吗？"
     },
+    {
       "date": "2026-06-07",
       "theme": "The capability-governance gap is widening",
       "opening": "Anthropic issued a rare public warning this week that its AI systems may soon be capable of self-improvement without human oversight, and urged the industry to develop a \"brake pedal\" for models that begin improving themselves faster than humans can monitor. This is a specific technical admission, not routine safety PR—current evaluation frameworks were designed for static models that update every few months, not for systems that can update their own weights during deployment.",
