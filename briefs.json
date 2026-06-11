@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-11",
+      "theme": "AI 从辅助工具变成自主攻击代理 —— 攻击面质变",
+      "opening": "Obsidian Security 6月10-11日的分析确认：Anthropic Mythos 与 OpenAI GPT-5.5 已能全自动执行「侦察→入侵→渗透」完整攻击链。这不是 AI 帮助黑客，这是 AI 成为黑客。攻击者的 expertise barrier 已降到接近零。",
+      "sections": [
+        {
+          "subtitle": "Mythos 与 GPT-5.5：autonomous offensive capability 的首次公开验证",
+          "body": "Mythos 两个月内扫描出 23,000 个潜在漏洞，仅 75 个 critical/high 被修补。Anthropic 和 OpenAI 各自启动 Project Glasswing / Daybreak 试图抢在发布前修复，但发现速度远超修复能力。这不是传统安全研究的 scale-up，而是 autonomous offensive capability 的首次公开验证——AI 可以规模化执行从前只有国家级 APT 才具备的全链条攻击。"
+        },
+        {
+          "subtitle": "监管重心错位：我们在管制 deepfake 肖像权时，autonomous attack agents 已经穿透 SaaS supply chain",
+          "body": "华盛顿州 deepfake 法律今日生效，全美 47 州已有 AI 相关立法，但监管重心仍在 content moderation 与 property rights。真正的 gap 是 offensive AI 的监管空白。芯片管制（MATCH Act）管的是硬件流动，但威胁已经从硅片转移到了权重。"
+        },
+        {
+          "subtitle": "对 Dymon 工作流的暗示：防御性 AI 的 urgency",
+          "body": "同样的 autonomous capability 可以用来攻击，也可以用来监控、审计、自动 patching。Anna 的 PhD 方向（Bayesian UQ + Agent/RAG）如果接入 security-oriented 场景，value proposition 会急剧放大——市场需要能自我验证、自我约束的 AI 系统。"
+        }
+      ],
+      "closing": "AI 的 dual-use 从未如此赤裸。今天值得记录。"
+    },
+    {
       "date": "2026-06-09",
       "theme": "Apple的AI中立策略遭遇EU监管围墙——平台层与主权层的首次正面冲突",
       "opening": "6月8日WWDC keynote确认了所有rumor，但也暴露了一个昨天简报无法预判的现实：Apple的AI Extensions框架——让ChatGPT、Gemini、Claude在同一个iPhone里竞争——被EU regulators直接拒绝。Apple明确声明Siri AI不会随iOS 27在EU上线。这是全球第一次有旗舰AI功能因平台监管被地理封锁，标志着AI战争的战场从模型层、平台层扩展到了主权层。",
