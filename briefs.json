@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-13",
+      "theme": "Anthropic overtakes OpenAI in enterprise adoption, but its partner aggression reveals a harder platform logic",
+      "opening": "The Ramp AI Index released June 12 shows Anthropic has overtaken OpenAI in US business adoption for the first time ever. The company is now at a $30 billion run-rate with over 1,000 customers spending $1 million+ annually, and just signed a 5-gigawatt Amazon compute commitment — a genuine competitive inflection that shows the \"safety-first\" lab is now winning the enterprise market it once positioned itself as merely serving.",
+      "sections": [
+        {
+          "subtitle": "The competitive inflection",
+          "body": "Anthropic's revenue run-rate jumped from $9 billion at the end of 2025 to $30 billion as of April 2026, with 1,000+ business customers spending over $1 million annually. The 5-gigawatt Amazon deal signed this week is roughly the power consumption of a major metropolitan area. This is not a minor statistical shift — the enterprise market is voting with contracts, and it's voting for Claude."
+        },
+        {
+          "subtitle": "The partner trust deficit",
+          "body": "The same day, The Information published a report on Anthropic blindsiding its own partners with surprise competitive launches. The pattern includes asking Figma and Canva to \"partner\" on the Claude Design launch while the tool directly competed with their products, and switching enterprise customers from flat per-seat fees to usage-based billing without warning — a change that could double or triple costs for heavy users. This is platform vendor behavior, not research lab behavior."
+        },
+        {
+          "subtitle": "The structural tension between safety branding and growth pressure",
+          "body": "Anthropic is simultaneously trying to maintain its \"safety-first\" positioning while behaving like any other growth-optimized platform. The Fable 5 usage policy controversy from earlier in the week — restricting AI safety researchers and then walking it back — fits the same pattern. The $36 billion Apollo-Blackstone private credit deal for Google TPUs and the 5-gigawatt infrastructure commitment create pressure to capture value aggressively. For a company whose IPO narrative depends on enterprise customers signing multi-year contracts, partner trust is a revenue-durability issue that S-1 readers will scrutinize."
+        }
+      ],
+      "closing": "For Anna's work at Dymon, the signal is clear: the AI platform layer is consolidating faster than expected, and the \"safe\" choice is becoming the dominant vendor with the same partner hazards as any other. Model-agnostic architecture isn't just a technical preference anymore — it's a risk management necessity."
+    },
+    {
       "date": "2026-06-12",
       "theme": "史上最大IPO今日开盘，AI估值叙事正式进入公开市场博弈",
       "opening": "SpaceX昨晚定价135美元/股，募资750亿美元，对应市值1.77万亿美元，今日以SPCX代码在纳斯达克挂牌。这远不止是航天股的资本事件——SpaceX今年2月完成对xAI的全股票吸收，Oppenheimer在其覆盖报告中直接将公司定位为「未来的全球最大通信与云/AI企业」。星链2025年贡献114亿美元营收，是核心现金牛，而估值溢价的主体来自xAI算力基础设施与轨道数据中心的远期叙事。与此同时，Anthropic已在6月1日向SEC秘密提交S-1（估值9650亿美元、年化营收470亿美元），OpenAI也于6月8日提交。三家AI核心玩家在同一季度冲击公开市场，这是AI估值从私募博弈转向公开市场定价的结构性拐点。",
