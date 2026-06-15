@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-15",
+      "theme": "美国政府用出口管制强制下线已部署的AI模型——AI从软件变成战略资产的范式转换已不可逆",
+      "opening": "Anthropic的Fable 5和Mythos 5在6月12日被美国商务部以EAR出口管制为由强制下线，这是历史上首次。截至6月15日，模型仍处于暂停状态，Anthropic与商务部正在谈判可能的恢复条件。同一天，Claude Sonnet 4和Opus 4的API硬截止生效。两个事件叠加，标志着一个新阶段的开始：前沿AI模型不再被当作普通软件产品管理，而是被纳入国家战略安全管制框架。",
+      "sections": [
+        {
+          "subtitle": "切面一：出口管制成为AI监管的首要工具，且程序门槛极低",
+          "body": "特朗普6月2日签署AI行政令建立自愿预发布审查框架，但商务部在6月12日使用的是现有EAR法律机制——不需要AI公司同意，不需要法院审查，一封来自商务部长的信就足够。触发因素是一个未具名第三方公司声称找到了jailbreak，但这个声称从未被公开验证。Anthropic自己的政府红队测试、英国AI安全研究所、多个第三方均未发现universal jailbreak。这意味着：前沿AI模型的部署安全不再由技术验证决定，而由政治判断和未经验证的情报决定。对OpenAI、Google、Meta、xAI而言，这创造了一个全新的风险类别——产品可以在发布后被强制下线，且没有上诉程序。"
+        },
+        {
+          "subtitle": "切面二：中国以2950亿美元国家算力网络回应，加速AI去全球化",
+          "body": "中国发改委计划五年内投资2万亿人民币（约2950亿美元）建设全国统一数据中心网络，由移动/电信运营，80%以上技术国产化（华为为主）。这不是对出口管制的反应，而是平行的战略推进——但两条线正在加速交汇。美国用EAR限制模型输出，中国用主权投资构建替代算力基础。私人企业层面，Meta刚签署270亿美元Nebius五年协议锁定Vera Rubin平台，NAVER与NVIDIA在韩国建设Gigawatt级工厂。全球AI基础设施正在从统一云裂变为主权块。"
+        },
+        {
+          "subtitle": "切面三：Anna工作层——model-agnostic architecture从偏好变为必需品",
+          "body": "6月13日已判断Anthropic的平台vendor行为与safety-first品牌之间存在结构性张力。Fable 5事件将这一张力推向了国家监管层面。对Dymon工作流而言：单一供应商依赖（无论Anthropic还是OpenAI）现在面临不仅是商业风险，还有监管不可预测性。MCP协议的价值在此背景下进一步放大——它使得模型切换成本降低，但前提是MCP本身不被视为管制对象。值得观察：商务部下一步是否会将MCP协议或agent工具链纳入出口管制范围。"
+        }
+      ],
+      "closing": "Fable 5最终会以某种形式恢复（技术修复+分级访问最有可能），但恢复不是回到原状。precedent已经建立，所有前沿AI实验室的S-1现在都需要包含这一新风险类别。对Anna而言，这意味着在构建Dymon的AI自动化层时，除了model-agnostic，还需要考虑jurisdiction-agnostic和provider-redundancy。"
+    },
+    {
       "date": "2026-06-13",
       "theme": "Anthropic overtakes OpenAI in enterprise adoption, but its partner aggression reveals a harder platform logic",
       "opening": "The Ramp AI Index released June 12 shows Anthropic has overtaken OpenAI in US business adoption for the first time ever. The company is now at a $30 billion run-rate with over 1,000 customers spending $1 million+ annually, and just signed a 5-gigawatt Amazon compute commitment — a genuine competitive inflection that shows the \"safety-first\" lab is now winning the enterprise market it once positioned itself as merely serving.",
