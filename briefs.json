@@ -1,6 +1,26 @@
 {
   "briefs": [
     {
+      "date": "2026-06-16",
+      "theme": "Anthropic承认80%代码由Claude自写，呼吁全球暂停——递归自我改进已从理论变为日常",
+      "opening": "当一家前沿AI实验室承认自己80%的代码由AI编写，并呼吁全球协调暂停时，这不是安全公关，这是一个工程现实的坦白。Anthropic在6月4日发布论文《When AI Builds Itself》，但这份文件在本周Fable 5下架的混乱中获得了结构性关注——两件事不是独立叙事，它们是同一个加速故事的不同切面。",
+      "sections": [
+        {
+          "subtitle": "递归自我改进的技术现实",
+          "body": "Anthropic内部数据显示，超过80%的代码现已由Claude自动生成。这不是AI辅助编程，这是AI系统参与自身构建的递归循环：更好的模型写出更好的代码，更好的代码训练出更好的模型。Fable 5于6月9日发布、6月12日被政府强制下线，恰好发生在这个加速窗口内——时间线暗示Anthropic自身可能对能力涌现的速度感到意外。"
+        },
+        {
+          "subtitle": "资本市场的并行信号",
+          "body": "Anthropic呼吁暂停的同时，SpaceX SPCX——2月完成对xAI的吸收合并——自6月12日IPO以来上涨25%，MSCI已于6月13日开始纳入，Nasdaq-100 inclusion预计7月7日。Anthropic和OpenAI均在6月初向SEC秘密提交S-1，正将SPCX视为\"dress rehearsal\"。悖论本身即是信号：同一个愿意为AI基础设施支付100倍远期溢价的资本市场，也明白任何全球暂停都将是局部的、不可验证的、暂时的。"
+        },
+        {
+          "subtitle": "Anna工作层——递归改进对model-agnostic策略的确认",
+          "body": "如果递归自我改进已在发生（80%代码来自AI），前沿实验室之间的能力差距将加速扩大，而非收敛。即便部分实施的全球暂停，也会冻结竞争格局，使现有模型能力变得更稀缺、更持久。对Anna在Dymon的OpenClaw Agent基础设施而言，这确认了之前的结构性判断：深度掌握现有工具链（MCP、多Agent编排、供应商冗余）比追逐下一个模型版本更有价值。递归循环意味着，今天的能力将以外部观察者无法追踪的速度自我复合。"
+        }
+      ],
+      "closing": "这不是\"AI会毁灭人类\"的科幻叙事，这是\"AI已经能写自己的代码\"的工程现实。监管反应总是滞后于技术现实，但这一次，技术现实本身正在推动监管。Anna应该关注的是：递归改进一旦开始，暂停令只会把它逼入地下，而不是停止。真正的策略是在当前窗口内锁定跨平台编排能力——因为下一个窗口可能不再对你开放。"
+    },
+    {
       "date": "2026-06-15",
       "theme": "美国政府用出口管制强制下线已部署的AI模型——AI从软件变成战略资产的范式转换已不可逆",
       "opening": "Anthropic的Fable 5和Mythos 5在6月12日被美国商务部以EAR出口管制为由强制下线，这是历史上首次。截至6月15日，模型仍处于暂停状态，Anthropic与商务部正在谈判可能的恢复条件。同一天，Claude Sonnet 4和Opus 4的API硬截止生效。两个事件叠加，标志着一个新阶段的开始：前沿AI模型不再被当作普通软件产品管理，而是被纳入国家战略安全管制框架。",
@@ -207,26 +227,6 @@
         }
       ],
       "closing": "结构性判断：AI行业正在unbundle。OpenAI的模型优势、Microsoft的分发能力、Anthropic的安全声誉——这三者曾经是bundled在一个axis里的，现在各自成为独立的competitive vector。对于需要在vendor selection和portfolio risk assessment中做判断的Anna来说，single-vendor strategy的risk正在加速上升，mixed-stack architecture的cost正在快速下降。"
-    },
-    {
-      "date": "2026-06-01",
-      "theme": "Mythos公开倒计时：AI漏洞发现能力即将从实验室特权变为公共基础设施",
-      "opening": "Anthropic今天首次明确给出时间表：Claude Mythos Preview将在'未来数周内'公开。过去一个月，Project Glasswing已发现23,019个软件漏洞——包括27年历史的OpenBSD bug和16年的FFmpeg缺陷。作为直接回应，IBM和Red Hat宣布部署20,000工程师、投入$5B建立开源漏洞清理中心。这不是一场普通的产品发布，而是网络安全行业底层权力结构的转移。",
-      "sections": [
-        {
-          "subtitle": "Mythos的能力边界正在重新定义'安全'",
-          "body": "Mythos不是又一个代码审查工具。它是Anthropic内部评估为'能在10次尝试中完成32步模拟企业网络攻击'的模型。目前仅限约50家Glasswing合作伙伴使用（包括Apple、Google、Microsoft、Cloudflare），即将公开意味着任何拥有enterprise API的组织都能获得自主漏洞发现能力。IBM今天宣布$5B开源清理项目，本质上是对这一能力的防御性回应——当AI能自动发现漏洞时，人类补丁的速度就成了瓶颈。对Anna在Dymon的工作来说，这意味着任何持有software infrastructure的portfolio公司，其cyber risk valuation都需要重新建模。"
-        },
-        {
-          "subtitle": "Microsoft Build前夕的供应链叛离",
-          "body": "Microsoft将在明天（6月2日）的Build 2026上发布自研MAI模型，包括专门的coding model来夺回被Claude Code抢走的企业开发者。Mustafa Suleyman团队此前被OpenAI合作协议限制训练顶级模型，4月重新谈判后才解绑。Reuters直接引用：'rivals' coding tools -- notably Anthropic's Claude Code -- have pulled ahead.' 这是Microsoft首次公开承认内部数据显示Claude Code已超越Copilot。更深层信号：即便是OpenAI最大的金主和分发渠道，也在用'自研+多元化'对冲单供应商风险。AI基础设施的供应链逻辑正在从'选最好的模型'变成'建混合栈'。"
-        },
-        {
-          "subtitle": "华盛顿叙事与开发者现实的撕裂",
-          "body": "美国财政部长在同一天宣称中国在AI上'大幅落后'，但OpenRouter数据却显示中国开源权重模型已占据开发者token流量的多数。两条信息可以同时成立——前者讲的是frontier lab的能力差距，后者讲的是开源生态的渗透深度。但撕裂本身就是信号：当中国模型通过开源路径绕过芯片管制、获得全球开发者心智份额时，传统的出口控制框架正在失效。对Anna在hedge fund的宏观判断来说，这意味着'AI竞赛'的评分标准正在从'谁有最强的闭源模型'变成'谁控制了最多的开源路由节点'。"
-        }
-      ],
-      "closing": "Mythos的公开将是一个不可逆的行业拐点。当AI自主发现漏洞的能力从50家特权伙伴扩散到任何企业，网络安全的供需关系会被彻底重写。Anna的Agent工作流——以及Dymon的任何software exposure——都需要假设：未来6个月，代码层面的风险发现速度会比人类补丁速度快一个数量级。"
     },
     {
       "date": "2026-06-01",
